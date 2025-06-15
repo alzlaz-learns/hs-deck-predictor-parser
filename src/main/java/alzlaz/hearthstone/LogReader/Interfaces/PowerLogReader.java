@@ -1,4 +1,4 @@
-package alzlaz.hearthston.LogReader;
+package alzlaz.hearthstone.LogReader.Interfaces;
 
 import java.io.IOException;
 

@@ -1,11 +1,15 @@
 package alzlaz.hearthstone.GameObjects;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Player {
     private Integer entityId;
     private Integer playerId;
     private String accountId;
     private String playerName;
     private boolean opponent = false;
+    private List<String> cardsPlayed = new ArrayList<>();
 
     public void setEntityId(Integer i){
         this.entityId = i;
@@ -45,6 +49,16 @@ public class Player {
 
     public boolean isOpponent(){
         return this.opponent;
+    }
+
+    public void addCardPlayed(String cardId) {
+        if (cardId != null && !cardId.isEmpty()) {
+            cardsPlayed.add(cardId);
+        }
+    }
+
+    public List<String> getCardsPlayed() {
+        return cardsPlayed;
     }
 
     

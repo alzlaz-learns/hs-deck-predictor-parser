@@ -22,7 +22,7 @@ public class StandardLogReader implements PowerLogReader {
     public StandardLogReader(GameInfoLineParser parser) {
         this.parser = parser;
 
-
+        //testing block for shutdown hook
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
         System.out.println("\nShutdown detected. Final game info:");
 
@@ -36,6 +36,7 @@ public class StandardLogReader implements PowerLogReader {
                 System.out.println(" - ID: " + p1.getPlayerId());
                 System.out.println(" - Name: " + p1.getPlayerName());
                 System.out.println(" - Opponent: " + p1.isOpponent());
+                System.out.println(" - Cards Played: " + p1.getCardsPlayed());
             }
 
             if (p2 != null && p2.getPlayerName() != null) {
@@ -43,6 +44,7 @@ public class StandardLogReader implements PowerLogReader {
                 System.out.println(" - ID: " + p2.getPlayerId());
                 System.out.println(" - Name: " + p2.getPlayerName());
                 System.out.println(" - Opponent: " + p2.isOpponent());
+                System.out.println(" - Cards Played: " + p2.getCardsPlayed());
             }
         }
     }));
@@ -51,10 +53,10 @@ public class StandardLogReader implements PowerLogReader {
     @Override
     public void readLog(String logFilePath) throws IOException{
         File logFile = new File(logFilePath);
-        String parsedLine = null;
+        // String parsedLine = null; //might not be needed, but keeping for now
 
         try (RandomAccessFile reader = new RandomAccessFile(logFile, "r")){
-            
+        
             long filePointer = 0;
             while(true){
 
@@ -69,14 +71,7 @@ public class StandardLogReader implements PowerLogReader {
                     reader.seek(filePointer);
                     String logLine;
                     while((logLine = reader.readLine()) != null) {
-
-                        parsedLine = parser.parseLine(logLine);
-
-                        if (!parser.gameStateParse()) {
-                            // System.out.println("Reading GameState logs");
-                            parser.gameStateParseLine(logLine);
-                        }
-
+                        parser.parseLine(logLine);
                     }
                     filePointer = reader.getFilePointer();
                 }

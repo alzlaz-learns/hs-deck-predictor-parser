@@ -3,49 +3,59 @@ package alzlaz.hearthstone.LogReader;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import alzlaz.hearthstone.GameObjects.GameInfo;
-import alzlaz.hearthstone.GameObjects.Player;
+
+import alzlaz.hearthstone.GameObjects.PowerLogRegexEnum;
 import alzlaz.hearthstone.LogReader.Interfaces.GameInfoLineParser;
 
 public class LineParser implements GameInfoLineParser {
-    private static final Pattern BLOCK_START_PLAY = Pattern.compile(
-        "BLOCK_START BlockType=PLAY Entity=\\[.*?id=(\\d+).*?cardId=([A-Z0-9_]*).*?player=(\\d)"
-    );
+    
+    private static final Logger logger = LoggerFactory.getLogger(LineParser.class);
+    
 
-    //SHOW_ENTITY - Updating Entity=[entityName=UNKNOWN ENTITY [cardType=INVALID] id=24 zone=DECK zonePos=0 cardId= player=1] CardID=EDR_000
-    private static final Pattern SHOW_ENTITY = Pattern.compile(
-        "SHOW_ENTITY - Updating Entity=\\[.*?id=(\\d+).*?\\] CardID=([A-Z0-9_]+)"
-    );
-
-
-    private final Pattern GAME_TYPE = Pattern.compile("GameType=([^.]*)");
-    private final Pattern FORMAT_TYPE = Pattern.compile("FormatType=([^.]*)");
-    private final Pattern PLAYER_ENTITY  =  Pattern.compile("PlayerID=(\\d+), PlayerName=([^.]*)");
-    private final Pattern REPLACE_UNKNOWN_PLAYER = Pattern.compile("TAG_CHANGE Entity=([^.]*) tag=CURRENT_PLAYER");
-
+    //matches entityId to playerId so when it appears in SHOW_ENTITY, we can determine the card and then added to appropriate players deck
+    private final Map<Integer, Integer> entityToPlayer = new HashMap<>(); 
 
     private boolean fullyParsed = false;
-    GameInfo gameInfo = new GameInfo();
+    private boolean gameEnded = false;
 
+    private GameInfo gameInfo;
+
+    public LineParser() {
+        gameInfo = new GameInfo();
+    }
 
 
     @Override
     public void parseLine(String logLine) {
-
 
         if(!fullyParsed) {
             gameStateParseLine(logLine);
         }
 
         if (logLine.contains("PowerTaskList.DebugPrintPower()")) {
-            Matcher matcher = BLOCK_START_PLAY.matcher(logLine);
+
+            /*  This if statement is used for non-opponent player
+                if it is non-opponent player, alot of the relevant information 
+                can be found by this regex pattern:
+                    "BLOCK_START BlockType=PLAY Entity=\\[.*?id=(\\d+).*?cardId=([A-Z0-9_]*).*?player=(\\d)"
+            */ 
+            Matcher matcher = PowerLogRegexEnum.BLOCK_START_PLAY.getPattern().matcher(logLine);
             if (matcher.find()){
                 parseBlockStartPlay(matcher);
             }
 
-            matcher = SHOW_ENTITY.matcher(logLine);
+            /*
+                This if statement is used for opponent player
+                if it is opponent player, the relevant information can be found by this regex pattern:
+                    "SHOW_ENTITY - Updating Entity=\\[.*?id=(\\d+).*?\\] CardID=([A-Z0-9_]+)
+             */
+            matcher = PowerLogRegexEnum.SHOW_ENTITY.getPattern().matcher(logLine);
             if(matcher.find()) {
                 onRevealAdd(matcher);
             }
@@ -54,85 +64,96 @@ public class LineParser implements GameInfoLineParser {
     }
 
     public void gameStateParseLine(String logLine){
-
-        
+        Matcher matcher;
 
         // If game state is not parsed, try to replace unknown player names
         if (!fullyParsed) {
-
             //detect game type
-            Matcher matcher = GAME_TYPE.matcher(logLine);
+            matcher = PowerLogRegexEnum.GAME_TYPE.getPattern().matcher(logLine);
             if(matcher.find()){
-                System.out.println("Game Type = " + matcher.group(1));
                 gameInfo.setGameType(matcher.group(1));
+                logger.info("Game Type = {}", matcher.group(1));
             }
 
             //detect format type
-            matcher = FORMAT_TYPE.matcher(logLine);
+            matcher = PowerLogRegexEnum.FORMAT_TYPE.getPattern().matcher(logLine);
             if(matcher.find()){
-                System.out.println("Format Type = " + matcher.group(1));
                 gameInfo.setFormatType(matcher.group(1));
+                logger.info("Format Type = {}", matcher.group(1));
             }
+
+            //TODO: detect entityId. I think it might not be necessary.
+
+
+            //TODO: 
 
             //detect player Id and player name
             //if playerName is UNKNOWN HUMAN PLAYER, it will set player as opponent
-            matcher = PLAYER_ENTITY.matcher(logLine);
-            
+            matcher = PowerLogRegexEnum.PLAYER_ENTITY.getPattern().matcher(logLine);
             if(matcher.find()){
                 int playerId = Integer.parseInt(matcher.group(1));
                 String playerName = matcher.group(2);
-                System.out.println("Player id = " + playerId + " Player Name = " + playerName);
-
                 if(playerId == 1) {
                     gameInfo.getPlayer1().setPlayerId(playerId);
                     gameInfo.getPlayer1().setPlayerName(playerName);
-
+                    logger.info("Player 1: ID = {}, Name = {}", playerId, playerName);
                     if (playerName.equals("UNKNOWN HUMAN PLAYER")) {
                         gameInfo.getPlayer1().setAsOpponent();
+                        logger.info("Player 1 is set as opponent due to UNKNOWN HUMAN PLAYER name.");
                     }
                 } else if (playerId == 2) {
                     gameInfo.getPlayer2().setPlayerId(playerId);
                     gameInfo.getPlayer2().setPlayerName(playerName);
+                    logger.info("Player 2: ID = {}, Name = {}", playerId, playerName);
                     if (playerName.equals("UNKNOWN HUMAN PLAYER")) {
                         gameInfo.getPlayer2().setAsOpponent();
+                        logger.info("Player 2 is set as opponent due to UNKNOWN HUMAN PLAYER name.");
                     }
                 }
             }
-            matcher = REPLACE_UNKNOWN_PLAYER.matcher(logLine);
 
+            matcher = PowerLogRegexEnum.REPLACE_UNKNOWN_PLAYER.getPattern().matcher(logLine);
             if (matcher.find()) {
                 String playerName = matcher.group(1);
 
                 if ("UNKNOWN HUMAN PLAYER".equals(gameInfo.getPlayer1().getPlayerName())) {
                     gameInfo.getPlayer1().setPlayerName(playerName);
-                    System.out.println("Replacing UNKNOWN HUMAN PLAYER with " + playerName + " for Player 1");
+                    logger.info("Replacing UNKNOWN HUMAN PLAYER with {} for Player 1", playerName);
                 } else if ("UNKNOWN HUMAN PLAYER".equals(gameInfo.getPlayer2().getPlayerName())) {
                     gameInfo.getPlayer2().setPlayerName(playerName);
-                    System.out.println("Replacing UNKNOWN HUMAN PLAYER with " + playerName + " for Player 2");
+                    logger.info("Replacing UNKNOWN HUMAN PLAYER with {} for Player 2", playerName);
                 }
             }
 
             isGameStateParse();
+
+            matcher = PowerLogRegexEnum.GAME_COMPLERTED.getPattern().matcher(logLine);
+            if (matcher.find()) {
+                gameEnded = true;
+                handleGameEnd();
+            }
         }
-        
     }
 
-    //matches entityId to playerId so when it appears in SHOW_ENTITY, we can determine the card and then added to appropriate players deck
-    private final Map<Integer, Integer> entityToPlayer = new HashMap<>(); 
 
+
+    /*
+     * This method parses the Block Start Play line.
+     * It puts the entityId to playerId mapping in the entityToPlayer map.
+     * If the cardId is not null or empty, it adds the card to the appropriate player's deck. which is should typically be non-opponent player
+     */
     public void parseBlockStartPlay(Matcher matcher) {
-
         int entityId = Integer.parseInt(matcher.group(1));
         String cardId = matcher.group(2);
         int playerId = Integer.parseInt(matcher.group(3));
         entityToPlayer.put(entityId, playerId);
-        // System.out.println("cardId=" + cardId + " player=" + playerId + " (id=" + entityId + ")");
         if (cardId != null && !cardId.isEmpty()) {
             if (playerId == 1) {
                 gameInfo.getPlayer1().addCardPlayed(cardId);
+                logger.info("Adding cardId={} to Player 1's deck", cardId);
             } else if (playerId == 2) {
-                System.out.println("Adding cardId=" + cardId + " to Player 2's deck");
                 gameInfo.getPlayer2().addCardPlayed(cardId);
+                logger.info("Adding cardId={} to Player 2's deck", cardId);
             }
         }
     }
@@ -155,19 +176,11 @@ public class LineParser implements GameInfoLineParser {
             }
         }
 
-        // for (Map.Entry<Integer, Integer> entry : entityToPlayer.entrySet()) {
-        //     if (entry.getKey() == entityId) {
-        //         int playerId = entry.getValue();
-                
-        //         if (playerId == 1) {
-        //             gameInfo.getPlayer1().addCardPlayed(cardId);
-        //         } else if (playerId == 2) {
-        //             gameInfo.getPlayer2().addCardPlayed(cardId);
-        //         }
-        //     }
-        // }
     }
  
+    /*
+     * Checks if the game state has been fully parsed.
+     */
     public void isGameStateParse(){
         String name1 = gameInfo.getPlayer1().getPlayerName();
         String name2 = gameInfo.getPlayer2().getPlayerName();
@@ -180,17 +193,18 @@ public class LineParser implements GameInfoLineParser {
             formatType != null) {
 
             fullyParsed = true;
-            System.out.println("Game state fully parsed.");
+            logger.info("Game state fully parsed.");
         }
     }
 
-
-    //testing methods
-    public Player getPlayer1() {
-        return gameInfo.getPlayer1();
+    public boolean hasGameEnded() {
+        return gameEnded;
     }
 
-    public Player getPlayer2() {
-        return gameInfo.getPlayer2();
+    public void handleGameEnd() {
+        logger.info("GAME ENDED");
+        logger.info("Player 1: {}", gameInfo.getPlayer1());
+        logger.info("Player 2: {}", gameInfo.getPlayer2());
     }
+
 }

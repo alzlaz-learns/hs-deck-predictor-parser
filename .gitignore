@@ -56,3 +56,6 @@ target/site/jacoco/
 # Optional binary/class files
 *.exec
 *.ec
+
+# VS Code settings
+.vscode/

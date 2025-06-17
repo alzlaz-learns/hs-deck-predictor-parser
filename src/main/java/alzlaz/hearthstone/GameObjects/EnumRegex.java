@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
     private final Pattern REPLACE_UNKNOWN_PLAYER = Pattern.compile("TAG_CHANGE Entity=([^.]*) tag=CURRENT_PLAYER");
  */
 //https://stackoverflow.com/questions/28359858/java-regex-pattern-compilation-best-practice-with-enum
-public enum PowerLogRegexEnum {
+public enum EnumRegex {
     BLOCK_START_PLAY("BLOCK_START BlockType=PLAY Entity=\\[.*?id=(\\d+).*?cardId=([A-Z0-9_]*).*?player=(\\d)"),
     SHOW_ENTITY("SHOW_ENTITY - Updating Entity=\\[.*?id=(\\d+).*?\\] CardID=([A-Z0-9_]+)"),
     GAME_TYPE("GameType=([^.]*)"),
@@ -29,11 +29,11 @@ public enum PowerLogRegexEnum {
     PLAYER_ENTITY("PlayerID=(\\d+), PlayerName=([^.]*)"),
     REPLACE_UNKNOWN_PLAYER("TAG_CHANGE Entity=([^.]*) tag=CURRENT_PLAYER"),
 
-    GAME_COMPLERTED("PowerTaskList.DebugPrintPower() -     TAG_CHANGE Entity=GameEntity tag=STATE value=COMPLETE");
-    
+    GAME_COMPLETED("TAG_CHANGE Entity=GameEntity tag=STATE value=COMPLETE"),
+    DATE_PATTERN("Hearthstone_(\\d{4}-\\d{2}-\\d{2}_\\d{2}-\\d{2}-\\d{2})");
     private final Pattern pattern;
 
-    PowerLogRegexEnum(final String regex) {
+    EnumRegex(final String regex) {
         this.pattern = Pattern.compile(regex);
     }
 

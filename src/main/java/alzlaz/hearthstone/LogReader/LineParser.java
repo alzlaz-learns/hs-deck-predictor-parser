@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 import alzlaz.hearthstone.GameObjects.GameInfo;
 
-import alzlaz.hearthstone.GameObjects.PowerLogRegexEnum;
+import alzlaz.hearthstone.GameObjects.EnumRegex;
 import alzlaz.hearthstone.LogReader.Interfaces.GameInfoLineParser;
 
 public class LineParser implements GameInfoLineParser {
@@ -45,7 +45,7 @@ public class LineParser implements GameInfoLineParser {
                 can be found by this regex pattern:
                     "BLOCK_START BlockType=PLAY Entity=\\[.*?id=(\\d+).*?cardId=([A-Z0-9_]*).*?player=(\\d)"
             */ 
-            Matcher matcher = PowerLogRegexEnum.BLOCK_START_PLAY.getPattern().matcher(logLine);
+            Matcher matcher = EnumRegex.BLOCK_START_PLAY.getPattern().matcher(logLine);
             if (matcher.find()){
                 parseBlockStartPlay(matcher);
             }
@@ -55,9 +55,16 @@ public class LineParser implements GameInfoLineParser {
                 if it is opponent player, the relevant information can be found by this regex pattern:
                     "SHOW_ENTITY - Updating Entity=\\[.*?id=(\\d+).*?\\] CardID=([A-Z0-9_]+)
              */
-            matcher = PowerLogRegexEnum.SHOW_ENTITY.getPattern().matcher(logLine);
+            matcher = EnumRegex.SHOW_ENTITY.getPattern().matcher(logLine);
             if(matcher.find()) {
                 onRevealAdd(matcher);
+            }
+
+            matcher = EnumRegex.GAME_COMPLETED.getPattern().matcher(logLine);
+            if (matcher.find()) {
+                System.out.println("Game completed detected.");
+                gameEnded = true;
+                handleGameEnd();
             }
 
         }
@@ -69,14 +76,14 @@ public class LineParser implements GameInfoLineParser {
         // If game state is not parsed, try to replace unknown player names
         if (!fullyParsed) {
             //detect game type
-            matcher = PowerLogRegexEnum.GAME_TYPE.getPattern().matcher(logLine);
+            matcher = EnumRegex.GAME_TYPE.getPattern().matcher(logLine);
             if(matcher.find()){
                 gameInfo.setGameType(matcher.group(1));
                 logger.info("Game Type = {}", matcher.group(1));
             }
 
             //detect format type
-            matcher = PowerLogRegexEnum.FORMAT_TYPE.getPattern().matcher(logLine);
+            matcher = EnumRegex.FORMAT_TYPE.getPattern().matcher(logLine);
             if(matcher.find()){
                 gameInfo.setFormatType(matcher.group(1));
                 logger.info("Format Type = {}", matcher.group(1));
@@ -89,7 +96,7 @@ public class LineParser implements GameInfoLineParser {
 
             //detect player Id and player name
             //if playerName is UNKNOWN HUMAN PLAYER, it will set player as opponent
-            matcher = PowerLogRegexEnum.PLAYER_ENTITY.getPattern().matcher(logLine);
+            matcher = EnumRegex.PLAYER_ENTITY.getPattern().matcher(logLine);
             if(matcher.find()){
                 int playerId = Integer.parseInt(matcher.group(1));
                 String playerName = matcher.group(2);
@@ -112,7 +119,7 @@ public class LineParser implements GameInfoLineParser {
                 }
             }
 
-            matcher = PowerLogRegexEnum.REPLACE_UNKNOWN_PLAYER.getPattern().matcher(logLine);
+            matcher = EnumRegex.REPLACE_UNKNOWN_PLAYER.getPattern().matcher(logLine);
             if (matcher.find()) {
                 String playerName = matcher.group(1);
 
@@ -126,12 +133,6 @@ public class LineParser implements GameInfoLineParser {
             }
 
             isGameStateParse();
-
-            matcher = PowerLogRegexEnum.GAME_COMPLERTED.getPattern().matcher(logLine);
-            if (matcher.find()) {
-                gameEnded = true;
-                handleGameEnd();
-            }
         }
     }
 
@@ -146,14 +147,16 @@ public class LineParser implements GameInfoLineParser {
         int entityId = Integer.parseInt(matcher.group(1));
         String cardId = matcher.group(2);
         int playerId = Integer.parseInt(matcher.group(3));
+
         entityToPlayer.put(entityId, playerId);
+    
         if (cardId != null && !cardId.isEmpty()) {
             if (playerId == 1) {
                 gameInfo.getPlayer1().addCardPlayed(cardId);
-                logger.info("Adding cardId={} to Player 1's deck", cardId);
+                logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
             } else if (playerId == 2) {
                 gameInfo.getPlayer2().addCardPlayed(cardId);
-                logger.info("Adding cardId={} to Player 2's deck", cardId);
+                logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
             }
         }
     }
@@ -162,17 +165,24 @@ public class LineParser implements GameInfoLineParser {
         int entityId = Integer.parseInt(matcher.group(1));
         String cardId = matcher.group(2);
 
+        
         if (cardId == null || cardId.isEmpty()) {
-            System.out.println("Skipping blank cardId for entityId=" + entityId);
             return; // Skip blank cardIds
         }
 
         Integer playerId = entityToPlayer.get(entityId);
+
+        if (playerId == null) {       
+            return;
+        }
+
         if (playerId != null) {
             if (playerId == 1) {
                 gameInfo.getPlayer1().addCardPlayed(cardId);
+                logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
             } else if (playerId == 2) {
                 gameInfo.getPlayer2().addCardPlayed(cardId);
+                logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
             }
         }
 
@@ -203,8 +213,8 @@ public class LineParser implements GameInfoLineParser {
 
     public void handleGameEnd() {
         logger.info("GAME ENDED");
-        logger.info("Player 1: {}", gameInfo.getPlayer1());
-        logger.info("Player 2: {}", gameInfo.getPlayer2());
+        logger.info("Player {}: {}, deck {}", gameInfo.getPlayer1().getPlayerId(), gameInfo.getPlayer1().getPlayerName(), gameInfo.getPlayer1().getCardsPlayed());
+        logger.info("Player {}: {}, deck {}", gameInfo.getPlayer2().getPlayerId(), gameInfo.getPlayer2().getPlayerName(), gameInfo.getPlayer2().getCardsPlayed());
     }
 
 }

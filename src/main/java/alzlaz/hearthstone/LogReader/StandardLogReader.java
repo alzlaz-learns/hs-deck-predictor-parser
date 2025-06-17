@@ -48,6 +48,7 @@ public class StandardLogReader implements PowerLogReader {
                         // check game end
                         if (parser instanceof LineParser lp && lp.hasGameEnded()) {
                             logger.info("Detected game end. Exiting read loop.");
+                            System.out.println("Game has ended, exiting read loop.");
                             return; // clean exit
                         }
                     }
@@ -56,7 +57,7 @@ public class StandardLogReader implements PowerLogReader {
 
                 try {
                     
-                    Thread.sleep(5000); // Sleep for a second before checking again
+                    Thread.sleep(500); // Sleep for a second before checking again
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                     break;

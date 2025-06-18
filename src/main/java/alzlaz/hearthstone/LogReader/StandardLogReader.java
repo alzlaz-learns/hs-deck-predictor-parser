@@ -56,8 +56,7 @@ public class StandardLogReader implements PowerLogReader {
                 }
 
                 try {
-                    
-                    Thread.sleep(500); // Sleep for a second before checking again
+                    Thread.sleep(3000); // Sleep for a second before checking again
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                     break;

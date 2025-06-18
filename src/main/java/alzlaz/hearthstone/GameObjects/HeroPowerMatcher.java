@@ -21,7 +21,9 @@ public class HeroPowerMatcher {
         "HERO_04",
         "HERO_03",
         "HERO_02",
-        "HERO_01" // Legacy versions
+        "HERO_01",
+        "EDR_847p", //blessing of the golem
+        "EDR_445p"  //Blessing of the Dragon
 
     );
 

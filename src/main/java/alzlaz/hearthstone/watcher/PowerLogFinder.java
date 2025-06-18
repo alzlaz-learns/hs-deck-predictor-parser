@@ -112,10 +112,9 @@ public class PowerLogFinder extends AbstractFolderWatcher implements Runnable {
 				
 				if(kind == ENTRY_CREATE) {
 			     	if (Files.isDirectory(child, LinkOption.NOFOLLOW_LINKS) && creationDateCheck(child.getFileName())) {
-			     		System.out.format("New Folder detected: %s"+ System.getProperty("line.separator"), 
-			     				child.getFileName().toString());
+			     		// System.out.format("New Folder detected: %s"+ System.getProperty("line.separator"), child.getFileName().toString());
 						 
-						 setInitialMostRecentFolder();
+						setInitialMostRecentFolder();
 						try {
 							registerAll(child);
 						} catch (IOException e) {
@@ -123,21 +122,21 @@ public class PowerLogFinder extends AbstractFolderWatcher implements Runnable {
 						}
 					} else if (Files.isRegularFile(child, LinkOption.NOFOLLOW_LINKS) &&
 							child.getFileName().toString().equalsIgnoreCase("power.log")) {
-			     		System.out.format("New power.log detected: %s" + System.getProperty("line.separator"), child.getFileName().toString());
-                        System.out.println(filePath);
+			     		// System.out.format("New power.log detected: %s" + System.getProperty("line.separator"), child.getFileName().toString());
+                        // System.out.println(filePath);
                         startLogParsing(child);
 			     	}
 			     } else if (kind == ENTRY_DELETE) {
 					if (Files.isDirectory(child, LinkOption.NOFOLLOW_LINKS)) {
-						System.out.format("Removing watch for directory: %s%n", child);
+						// System.out.format("Removing watch for directory: %s%n", child);
 						keys.remove(key);
 					} else if (child.getFileName().toString().equalsIgnoreCase("power.log")) {
-						System.out.format("power.log file deleted: %s%n", child);
+						// System.out.format("power.log file deleted: %s%n", child);
 					}
-					System.out.format("Entry deleted: %s%n", child.getFileName().toString());
+					// System.out.format("Entry deleted: %s%n", child.getFileName().toString());
 			     } else if (kind == ENTRY_MODIFY) {
 					if (child.getFileName().toString().equalsIgnoreCase("power.log")) {
-						System.out.format("power.log file modified: %s", child);
+						// System.out.format("power.log file modified: %s", child);
 					}
 
 			     }

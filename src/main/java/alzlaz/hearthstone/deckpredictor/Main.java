@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         GameInfoLineParser lineParser = new LineParser();
         PowerLogReader logReader = new StandardLogReader(lineParser);
-        String logFilePath = "./src/main/resources/Power.log";
+        String logFilePath = "./src/main/resources/Power2.log";
         logReader.readLog(logFilePath);
     }
 }

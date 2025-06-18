@@ -123,10 +123,11 @@ public class LineParser implements GameInfoLineParser {
             if (matcher.find()) {
                 String playerName = matcher.group(1);
 
-                if ("UNKNOWN HUMAN PLAYER".equals(gameInfo.getPlayer1().getPlayerName())) {
+                
+                if ("UNKNOWN HUMAN PLAYER".equals(gameInfo.getPlayer1().getPlayerName()) && !playerName.equals(gameInfo.getPlayer2().getPlayerName())) {
                     gameInfo.getPlayer1().setPlayerName(playerName);
                     logger.info("Replacing UNKNOWN HUMAN PLAYER with {} for Player 1", playerName);
-                } else if ("UNKNOWN HUMAN PLAYER".equals(gameInfo.getPlayer2().getPlayerName())) {
+                } else if ("UNKNOWN HUMAN PLAYER".equals(gameInfo.getPlayer2().getPlayerName()) && !playerName.equals(gameInfo.getPlayer2().getPlayerName())) {
                     gameInfo.getPlayer2().setPlayerName(playerName);
                     logger.info("Replacing UNKNOWN HUMAN PLAYER with {} for Player 2", playerName);
                 }
@@ -157,9 +158,11 @@ public class LineParser implements GameInfoLineParser {
             if (cardId != null && !cardId.isEmpty()) {
                 if (playerId == 1) {
                     gameInfo.getPlayer1().addCardPlayed(cardId);
+                    System.out.printf("play Player: %d %s played: %s\n", playerId, gameInfo.getPlayer1().getPlayerName(), cardId);
                     logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
                 } else if (playerId == 2) {
                     gameInfo.getPlayer2().addCardPlayed(cardId);
+                    System.out.printf("Play Player: %d %s played: %s\n", playerId, gameInfo.getPlayer2().getPlayerName(), cardId);
                     logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
                 }
             }
@@ -173,10 +176,7 @@ public class LineParser implements GameInfoLineParser {
         int entityId = Integer.parseInt(matcher.group(1));
         String cardId = matcher.group(2);
 
-        
-        if (cardId == null || cardId.isEmpty()) {
-            return; // Skip blank cardIds
-        }
+    
 
         Integer playerId = entityToPlayer.get(entityId);
 
@@ -187,9 +187,11 @@ public class LineParser implements GameInfoLineParser {
         if (playerId != null) {
             if (playerId == 1) {
                 gameInfo.getPlayer1().addCardPlayed(cardId);
+                System.out.printf("reveal Player: %d %s played: %s\n", playerId, gameInfo.getPlayer1().getPlayerName(), cardId);
                 logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
             } else if (playerId == 2) {
                 gameInfo.getPlayer2().addCardPlayed(cardId);
+                System.out.printf("Reveal Player: %d %s played: %s\n", playerId, gameInfo.getPlayer2().getPlayerName(), cardId);
                 logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
             }
         }

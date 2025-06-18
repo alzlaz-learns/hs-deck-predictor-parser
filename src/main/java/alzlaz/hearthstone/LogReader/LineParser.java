@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import alzlaz.hearthstone.GameObjects.GameInfo;
-
+import alzlaz.hearthstone.GameObjects.HeroPowerMatcher;
 import alzlaz.hearthstone.GameObjects.EnumRegex;
 import alzlaz.hearthstone.LogReader.Interfaces.GameInfoLineParser;
 
@@ -148,17 +148,25 @@ public class LineParser implements GameInfoLineParser {
         String cardId = matcher.group(2);
         int playerId = Integer.parseInt(matcher.group(3));
 
-        entityToPlayer.put(entityId, playerId);
-    
-        if (cardId != null && !cardId.isEmpty()) {
-            if (playerId == 1) {
-                gameInfo.getPlayer1().addCardPlayed(cardId);
-                logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
-            } else if (playerId == 2) {
-                gameInfo.getPlayer2().addCardPlayed(cardId);
-                logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
+
+        //this is probably going to be problematic in the future I need to research what the hero card ids are.
+        // but temporarily it is a fix for not adding hero power actions into 
+        if(!HeroPowerMatcher.isHeroPower(cardId)){
+            entityToPlayer.put(entityId, playerId);
+
+            if (cardId != null && !cardId.isEmpty()) {
+                if (playerId == 1) {
+                    gameInfo.getPlayer1().addCardPlayed(cardId);
+                    logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
+                } else if (playerId == 2) {
+                    gameInfo.getPlayer2().addCardPlayed(cardId);
+                    logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
+                }
             }
         }
+        
+    
+        
     }
 
     public void onRevealAdd(Matcher matcher){

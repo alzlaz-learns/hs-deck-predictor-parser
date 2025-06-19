@@ -11,11 +11,6 @@ import alzlaz.hearthstone.LogReader.Interfaces.GameInfoLineParser;
 public class LineParserTest {
     private GameInfoLineParser parser;
 
-    @BeforeEach
-    void setUp() {
-        parser = new LineParser();
-    }
-
 
 }
 

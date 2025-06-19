@@ -34,4 +34,11 @@ public class GameInfo {
     public String getFormatType() {
         return formatType;
     }
+
+    public void reset(){
+        this.player1 = new Player();
+        this.player2 = new Player();
+        this.gameType = null;
+        this.formatType = null;
+    }
 }

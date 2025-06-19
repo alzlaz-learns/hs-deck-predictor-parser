@@ -47,13 +47,14 @@ public class StandardLogReader implements PowerLogReader {
 
                         // check game end
                         if (parser instanceof LineParser lp && lp.hasGameEnded()) {
-                            logger.info("Detected game end. Exiting read loop.");
-                            System.out.println("Game has ended, exiting read loop.");
-                            return; // clean exit
+                            logger.info("Detected game end.");
+                            System.out.println("Game has ended");
+                            lp.resetLineParserState();
                         }
                     }
-                    filePointer = reader.getFilePointer();
                 }
+
+                filePointer = reader.getFilePointer();
 
                 try {
                     Thread.sleep(3000); // Sleep for a second before checking again

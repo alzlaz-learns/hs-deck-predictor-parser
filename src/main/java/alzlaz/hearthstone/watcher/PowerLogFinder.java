@@ -17,6 +17,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import alzlaz.hearthstone.GameObjects.GameInfo;
+import alzlaz.hearthstone.LogReader.HandleJson;
 import alzlaz.hearthstone.LogReader.LineParser;
 import alzlaz.hearthstone.LogReader.StandardLogReader;
 
@@ -27,17 +29,21 @@ public class PowerLogFinder extends AbstractFolderWatcher implements Runnable {
 
 	private static final Pattern DATE_PATTERN = Pattern.compile("Hearthstone_(\\d{4})_(\\d{2})_(\\d{2})_(\\d{2})_(\\d{2})_(\\d{2})");
 	private Path mostRecentFolder;
+	private final LineParser lineParser;
+
 
 	public Map<Path, Long> lastModifiedTimestamps;
-
 	private final Set<Path> activeLogFiles = Collections.synchronizedSet(new HashSet<>());
     private final AtomicBoolean running = new AtomicBoolean(true);
+	
 
-	public PowerLogFinder(Path dir) throws IOException {
+	public PowerLogFinder(Path dir, LineParser parser) throws IOException {
 		super(dir);
-		// TODO Auto-generated constructor stub
+
+		this.lineParser = parser;
+
+
 		this.lastModifiedTimestamps = new HashMap<>();
-		
 		setInitialMostRecentFolder();
 		if (mostRecentFolder != null) {
 			// Resolve the path to power.log within the most recent folder
@@ -68,7 +74,7 @@ public class PowerLogFinder extends AbstractFolderWatcher implements Runnable {
             new Thread(() -> {
                 try {
                     System.out.println("Starting to parse: " + path);
-                    StandardLogReader reader = new StandardLogReader(new LineParser());
+                    StandardLogReader reader = new StandardLogReader(lineParser);
                     reader.readLog(path.toString());
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -105,41 +111,41 @@ public class PowerLogFinder extends AbstractFolderWatcher implements Runnable {
 		WatchEvent.Kind<?> kind = event.kind();
 		//
 		String filePath = child.toAbsolutePath().toString();
-		        if(kind == OVERFLOW) {
-		        	System.err.println("Overflow");
-                    return;
-		        }
-				
-				if(kind == ENTRY_CREATE) {
-			     	if (Files.isDirectory(child, LinkOption.NOFOLLOW_LINKS) && creationDateCheck(child.getFileName())) {
-			     		// System.out.format("New Folder detected: %s"+ System.getProperty("line.separator"), child.getFileName().toString());
-						 
-						setInitialMostRecentFolder();
-						try {
-							registerAll(child);
-						} catch (IOException e) {
-							throw new RuntimeException(e);
-						}
-					} else if (Files.isRegularFile(child, LinkOption.NOFOLLOW_LINKS) &&
-							child.getFileName().toString().equalsIgnoreCase("power.log")) {
-			     		// System.out.format("New power.log detected: %s" + System.getProperty("line.separator"), child.getFileName().toString());
-                        // System.out.println(filePath);
-                        startLogParsing(child);
-			     	}
-			     } else if (kind == ENTRY_DELETE) {
-					if (Files.isDirectory(child, LinkOption.NOFOLLOW_LINKS)) {
-						// System.out.format("Removing watch for directory: %s%n", child);
-						keys.remove(key);
-					} else if (child.getFileName().toString().equalsIgnoreCase("power.log")) {
-						// System.out.format("power.log file deleted: %s%n", child);
-					}
-					// System.out.format("Entry deleted: %s%n", child.getFileName().toString());
-			     } else if (kind == ENTRY_MODIFY) {
-					if (child.getFileName().toString().equalsIgnoreCase("power.log")) {
-						// System.out.format("power.log file modified: %s", child);
-					}
+		if(kind == OVERFLOW) {
+			System.err.println("Overflow");
+			return;
+		}
+		
+		if(kind == ENTRY_CREATE) {
+			if (Files.isDirectory(child, LinkOption.NOFOLLOW_LINKS) && creationDateCheck(child.getFileName())) {
+				// System.out.format("New Folder detected: %s"+ System.getProperty("line.separator"), child.getFileName().toString());
+					
+				setInitialMostRecentFolder();
+				try {
+					registerAll(child);
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+				}
+			} else if (Files.isRegularFile(child, LinkOption.NOFOLLOW_LINKS) &&
+					child.getFileName().toString().equalsIgnoreCase("power.log")) {
+				// System.out.format("New power.log detected: %s" + System.getProperty("line.separator"), child.getFileName().toString());
+				// System.out.println(filePath);
+				startLogParsing(child);
+			}
+			} else if (kind == ENTRY_DELETE) {
+			if (Files.isDirectory(child, LinkOption.NOFOLLOW_LINKS)) {
+				// System.out.format("Removing watch for directory: %s%n", child);
+				keys.remove(key);
+			} else if (child.getFileName().toString().equalsIgnoreCase("power.log")) {
+				// System.out.format("power.log file deleted: %s%n", child);
+			}
+			// System.out.format("Entry deleted: %s%n", child.getFileName().toString());
+			} else if (kind == ENTRY_MODIFY) {
+			if (child.getFileName().toString().equalsIgnoreCase("power.log")) {
+				// System.out.format("power.log file modified: %s", child);
+			}
 
-			     }
+		}
 	}
 
     @Override
@@ -179,9 +185,15 @@ public class PowerLogFinder extends AbstractFolderWatcher implements Runnable {
   public static void main(String[] args) throws IOException {
         
         Path folder = Paths.get("C:\\Program Files (x86)\\Hearthstone\\Logs");
-        PowerLogFinder folderWatcher = new PowerLogFinder(folder);
+		HandleJson cardLookup = new HandleJson();
+		GameInfo gameInfo = new GameInfo();
+		LineParser lineParser = new LineParser(cardLookup, gameInfo);
 
-        ExecutorService executor = Executors.newSingleThreadExecutor(); // or use a pool if you scale
+
+
+        PowerLogFinder folderWatcher = new PowerLogFinder(folder, lineParser);
+
+        ExecutorService executor = Executors.newSingleThreadExecutor();
 
         executor.submit(folderWatcher);
 

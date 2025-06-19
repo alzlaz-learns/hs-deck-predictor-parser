@@ -23,8 +23,8 @@ public class HeroPowerMatcher {
         "HERO_02",
         "HERO_01",
         "EDR_847p", //blessing of the golem
-        "EDR_445p"  //Blessing of the Dragon
-
+        "EDR_445p",  //Blessing of the Dragon
+        "TOY_829hp" // Pulsing Pumpkins headless horseman hp
     );
 
     public static boolean isHeroPower(String cardId) {

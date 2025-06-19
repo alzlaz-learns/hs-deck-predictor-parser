@@ -25,9 +25,11 @@ public class LineParser implements GameInfoLineParser {
     private boolean gameEnded = false;
 
     private GameInfo gameInfo;
+    private final HandleJson cardLookup;
 
-    public LineParser() {
-        gameInfo = new GameInfo();
+    public LineParser(HandleJson cardLookup, GameInfo gameInfo) {
+        this.gameInfo = gameInfo;
+        this.cardLookup = cardLookup;
     }
 
 
@@ -158,11 +160,11 @@ public class LineParser implements GameInfoLineParser {
             if (cardId != null && !cardId.isEmpty()) {
                 if (playerId == 1) {
                     gameInfo.getPlayer1().addCardPlayed(cardId);
-                    System.out.printf("play Player: %d %s played: %s\n", playerId, gameInfo.getPlayer1().getPlayerName(), cardId);
+                    System.out.printf("play Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer1().getPlayerName(), cardLookup.findCardById(cardId), cardId);
                     logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
                 } else if (playerId == 2) {
                     gameInfo.getPlayer2().addCardPlayed(cardId);
-                    System.out.printf("Play Player: %d %s played: %s\n", playerId, gameInfo.getPlayer2().getPlayerName(), cardId);
+                    System.out.printf("Play Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer2().getPlayerName(), cardLookup.findCardById(cardId), cardId);
                     logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
                 }
             }
@@ -187,11 +189,11 @@ public class LineParser implements GameInfoLineParser {
         if (playerId != null) {
             if (playerId == 1) {
                 gameInfo.getPlayer1().addCardPlayed(cardId);
-                System.out.printf("reveal Player: %d %s played: %s\n", playerId, gameInfo.getPlayer1().getPlayerName(), cardId);
+                System.out.printf("reveal Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer1().getPlayerName(),cardLookup.findCardById(cardId), cardId);
                 logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
             } else if (playerId == 2) {
                 gameInfo.getPlayer2().addCardPlayed(cardId);
-                System.out.printf("Reveal Player: %d %s played: %s\n", playerId, gameInfo.getPlayer2().getPlayerName(), cardId);
+                System.out.printf("Reveal Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer2().getPlayerName(),cardLookup.findCardById(cardId), cardId);
                 logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
             }
         }
@@ -221,10 +223,23 @@ public class LineParser implements GameInfoLineParser {
         return gameEnded;
     }
 
+    public void resetLineParserState(){
+        gameInfo.reset();
+        this.gameEnded = false;
+        this.fullyParsed = false;
+        this.entityToPlayer.clear();
+        logger.info("resetting game state");
+        logger.info("Checking Reset success");
+        logger.info("Player {}: {}, deck {}", gameInfo.getPlayer1().getPlayerId(), gameInfo.getPlayer1().getPlayerName(), gameInfo.getPlayer1().getCardsPlayed());
+        logger.info("Player {}: {}, deck {}", gameInfo.getPlayer2().getPlayerId(), gameInfo.getPlayer2().getPlayerName(), gameInfo.getPlayer2().getCardsPlayed());
+    }
+
     public void handleGameEnd() {
         logger.info("GAME ENDED");
         logger.info("Player {}: {}, deck {}", gameInfo.getPlayer1().getPlayerId(), gameInfo.getPlayer1().getPlayerName(), gameInfo.getPlayer1().getCardsPlayed());
         logger.info("Player {}: {}, deck {}", gameInfo.getPlayer2().getPlayerId(), gameInfo.getPlayer2().getPlayerName(), gameInfo.getPlayer2().getCardsPlayed());
+    
+        
     }
 
 }

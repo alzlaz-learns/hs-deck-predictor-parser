@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import alzlaz.hearthstone.GameObjects.GameInfo;
+import alzlaz.hearthstone.GameObjects.HeroPowerMatcher;
 import alzlaz.hearthstone.LogReader.HandleJson;
 import alzlaz.hearthstone.LogReader.LineParser;
 import alzlaz.hearthstone.LogReader.StandardLogReader;
@@ -23,5 +24,6 @@ public class Main {
         PowerLogReader logReader = new StandardLogReader(lineParser);
         String logFilePath = ".\\src\\main\\resources\\Power.log"; // deckpredictor\src\main\resources\Power.log
         logReader.readLog(logFilePath);
+
     }
 }

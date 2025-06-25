@@ -1,0 +1,2009 @@
+=== SHAMAN ===
+AT_050t: Lightning Jolt
+AV_258p: Elemental Mastery
+AV_258p2: Water Invocation
+AV_258pt: Earth Invocation
+AV_258pt3: Fire Invocation
+AV_258pt4: Lightning Invocation
+AV_258pt7: Command the Elements
+BOM_01_Brukan_01p: Totemic Mastery
+BOM_01_Brukan_02p1: Bru'kan
+BOM_01_Brukan_03p1: Bru'kan
+BOM_01_Brukan_04p1: Bru'kan
+BOM_01_Brukan_05p1: Bru'kan
+BOM_01_Brukan_06p1: Bru'kan
+BOM_01_Brukan_07p1: Bru'kan
+BOM_01_IshaAwak_04p: Regurgitate
+BOM_02_SludgeBeast_03p: Glub Blub
+BOM_03_Brukan_02p: Bru'kan
+BOM_03_Murstrosity_07p: Murstrosity
+BOM_03_Mutanus_07p: Devour
+BOM_05_Brukan_004p: For the Darkspear!
+BOM_08_Tavish_Drekthar_006p: Shamanic Trial
+BOM_09_Brukan_001p: Totemic Talent
+BOM_09_Brukan_002p: Totemic Talent
+BOM_09_Brukan_004p: Totemic Talent
+BOM_09_Brukan_005p: Totemic Talent
+BOM_09_Brukan_006p: Totemic Talent
+BOM_09_Brukan_007p: Windchill
+BOM_09_Brukan_008p: Windchill
+BOM_09_Lokholar_006p: Windchill
+BOM_10_Memorial_001p: Keep the Peace
+BTA_BOSS_09p: Fel Lightning
+BTA_BOSS_24p: Shock Blast
+CS2_049_H1: Totemic Call
+CS2_049_H1_AT_132: Totemic Slam
+CS2_049_H2: Totemic Call
+CS2_049_H2_AT_132: Totemic Slam
+CS2_049_H3: Totemic Call
+CS2_049_H3_AT_132: Totemic Slam
+CS2_049_H4: Totemic Call
+CS2_049_H4_AT_132: Totemic Slam
+CS2_049_H5: Totemic Call
+DALA_Shaman_HP1: Evolution
+DALA_Shaman_HP2: Refresh
+DRG_238p4: Galakrond's Fury
+DRGA_BOSS_06p: Swampqueen's Touch
+DRGA_BOSS_06p_H: Swampqueen's Touch
+DRGA_BOSS_20p: Stormrage
+DRGA_BOSS_20p_H: Stormrage
+EDR_448p: Blessing of the Wind
+HERO_02agbp: Totemic Call
+HERO_02agbp2: Totemic Slam
+HERO_02ajbp2: Totemic Slam
+HERO_02ajbp_Copy: Totemic Call
+HERO_02ambp: Totemic Call
+HERO_02ambp2: Totemic Slam
+HERO_02arhp: Totemic Call
+HERO_02arhp2: Totemic Slam
+HERO_02athp: Totemic Call
+HERO_02athp2: Totemic Slam
+HERO_02axhp: Totemic Call
+HERO_02axhp2: Totemic Slam
+HERO_02azhp: Totemic Call
+HERO_02azhp2: Totemic Slam
+HERO_02bbhp: Totemic Call
+HERO_02bbhp2: Totemic Slam
+HERO_02bchp: Totemic Call
+HERO_02bchp2: Totemic Slam
+HERO_02bfhp: Totemic Call
+HERO_02bfhp2: Totemic Slam
+HERO_02bghp: Totemic Call
+HERO_02bghp2: Totemic Slam
+HERO_02bhhp: Totemic Call
+HERO_02bhhp2: Totemic Slam
+HERO_02bp: Totemic Call
+HERO_02bp2: Totemic Slam
+HERO_02fbp: Totemic Call
+HERO_02fbp2: Totemic Slam
+HERO_02mbp: Totemic Call
+HERO_02mbp2: Totemic Slam
+PVPDR_DMF_Shamanp1: Ferocious Flurry
+PVPDR_Finley_HP2: Bubble Blower
+PVPDR_SCH_Shamanp1: Totemic Power
+PVPDR_YOP_ShamanP1: Stormcatcher
+Story_02_DaelinHP: Launch Warship
+Story_02_DarkscaleHP: Tornado
+Story_03_FireElementalHP: Incinerate
+Story_03_GeyahHP: Wise Counsel
+Story_03_RehgarHP: Balanced Judgment
+Story_03_ThrallHP: Equip Charged Doomhammer
+Story_06_Rehgar_01p: Teambuilder
+Story_07_DrekThar_002p: Shamanic Trial
+Story_07_Stranger_003p: Equip Doomhammer
+Story_07_Thrall_004p: Equip Doomhammer
+Story_07_Thrall_005p: Equip Doomhammer Rank 2
+Story_07_Thrall_006p: Spirit of Air
+Story_07_Thrall_007p: Spirit of Air Rank 2
+Story_07_Thrall_008p: Equip Charged Doomhammer
+Story_08_Ragnaros_007p: Firelord's Rage
+Story_09_Guldan_001p: Resist
+Story_09_Guldan_002p: Resist Rank 2
+Story_09_Nerzhul_003p: Spiritual Growth
+Story_09_Throne_002p: Fury of the Elements
+Story_10_Akama_008p: Chain Lightning
+Story_11_Hurricane_005p: Squall
+Story_11_Sundering_011p: Calamitous Flood
+TB_01_BOM_Mercs_Brukan_001p: Bru'kan
+TB_BBR3_BOSS_01p: Swampqueen's Touch
+TB_BotB_Inzah_001p: In the Zone
+TB_RoadToNR_MurgathaHP: Mrrgl-ution
+THD_026hp: OBEY MY COMMAND!
+THD_027hp: Strike Twice
+THD_028hp: Totemic Power
+THD_105hp: Harness the Storm
+ULD_291p: Heart of Vir'naal
+ULDA_BOSS_12p: Brick by Brick
+ULDA_BOSS_12px: Brick by Brick
+ULDA_BOSS_15p: Puffertrooper
+ULDA_BOSS_15px: Puffertrooper
+ULDA_BOSS_28p: Mighty Windstorm
+ULDA_BOSS_29p: Mother of Sand
+ULDA_BOSS_31p: Pillaged Relics
+ULDA_BOSS_31px: Pillaged Relics
+ULDA_BOSS_35p: Vengeful Construct
+ULDA_BOSS_39p1: Made of Murlocs
+ULDA_BOSS_39p2: Ashes Anew
+ULDA_BOSS_39p3: Mur-nado
+ULDA_BOSS_39px2: Ashes Anew
+ULDA_BOSS_39px3: Mur-nado
+ULDA_BOSS_42p: Sand Shapin'
+ULDA_BOSS_42px: Sand Shapin'
+ULDA_BOSS_55p: Fish Food
+ULDA_BOSS_63p: Plaguebringer
+ULDA_BOSS_66p: Masterful Djinn
+ULDA_BOSS_66px: Lord of the South Wind
+ULDA_Finley_HP2: Bubble Blower
+VAN_HERO_02bp: Totemic Call
+VAN_HERO_02bp2: Totemic Slam
+WON_092p: SWAT, INSECTS!
+
+=== DRUID ===
+AT_132_DRUIDa: Dire Shapeshift
+AT_132_DRUIDb: Dire Shapeshift
+AT_132_DRUIDc: Dire Shapeshift
+AV_205p: Nurture
+BOM_01_Guff_03p2: Guff
+BOM_01_Guff_04p2: Guff
+BOM_01_Guff_05p2: Guff
+BOM_01_Guff_06p2: Guff
+BOM_01_Guff_07p2: Guff
+BOM_01_Plaguemaw_03p: Rez the Roof
+BOM_03_AngryTreant_01p: Nature's Grasp
+BOM_03_Guff_01p: Guff's Buffs
+BOM_03_Guff_02p: Ask for Help
+BOM_03_Guff_03p: Ask for Help
+BOM_03_Guff_04p: Ask for Help
+BOM_03_Guff_05p: Ask for Help
+BOM_03_Guff_06p: Ask for Help
+BOM_03_Guff_07p: Ask for Help
+BOM_03_Guff_08p: Guff's Buffs
+BOM_05_Guff_004p: Look! A Squirrel!
+BOM_09_Guff_003p: Guff
+CS2_017_HS1: Shapeshift
+CS2_017_HS2: Shapeshift
+CS2_017_HS3: Shapeshift
+CS2_017_HS4: Shapeshift
+DALA_Druid_HP1: Lifebloom
+DALA_Druid_HP2: Touch of Bark
+DRGA_BOSS_02p: Plan Ahead
+DRGA_BOSS_32p: Dragonflame
+DRGA_BOSS_32p_H: Dragonflame
+EDR_847p: Blessing of the Golem
+HERO_06ahbp: Shapeshift
+HERO_06ahbp2: Dire Shapeshift
+HERO_06aibp: Shapeshift
+HERO_06aibp2: Dire Shapeshift
+HERO_06ashp: Shapeshift
+HERO_06ashp2: Dire Shapeshift
+HERO_06awhp: Shapeshift
+HERO_06awhp2: Dire Shapeshift
+HERO_06ayhp: Shapeshift
+HERO_06ayhp2: Dire Shapeshift
+HERO_06bahp: Shapeshift
+HERO_06bahp2: Dire Shapeshift
+HERO_06bp: Shapeshift
+HERO_06bp2: Dire Shapeshift
+HERO_06ebp: Shapeshift
+HERO_06ebp2: Dire Shapeshift
+HERO_06fbp: Shapeshift
+HERO_06fbp2: Dire Shapeshift
+HERO_06pbp: Shapeshift
+HERO_06pbp2: Dire Shapeshift
+HERO_06rbp: Shapeshift
+HERO_06rbp2: Dire Shapeshift
+HERO_06ubp: Shapeshift
+HERO_06ubp2: Dire Shapeshift
+HERO_06zbp: Shapeshift
+HERO_06zbp2: Dire Shapeshift
+Prologue_CenariusHP: Nature's Grasp
+PVPDR_DMF_Druidp1: Invigorating Bloom
+PVPDR_Elise_HP1: Elise's Might
+PVPDR_Elise_HP2: Druidic Teaching
+PVPDR_Elise_HP3: Starseeker
+PVPDR_SCH_Druidp3: Nature's Gifts
+PVPDR_YOP_DruidP1: Harvest Time!
+Story_02_MishaHP: Wild Thrashing
+Story_08_Cenarius_001p: Learn to Grow
+Story_08_Malfurion_003p: Greater Innervate
+Story_08_Malfurion_004p: Ensnaring Roots
+Story_08_Malfurion_005p: Ensnaring Roots Rank 2
+Story_08_Malfurion_006p: Dispel Nightmare
+Story_08_Malfurion_007p: Tranquility
+Story_08_Malfurion_008p: Tranquility Rank 2
+Story_08_MalfurionBear_001p: Feral Strength
+Story_08_MalfurionCat_001p: Feral Frenzy
+Story_10_Malfurion_004p: Tranquility
+TB_01_BOM_Mercs_Guff_001p: Guff
+TB_BBR3_BOSS_07p: Nature's Grasp
+TB_BotB_Zok_001p: Far Out!
+TB_LOEA13_2: Ancient Power
+THD_007hp: Call to the Grove
+THD_008hp: Nature's Gifts
+THD_009hp: Feral Frenzy
+THD_038hp: C'THUN! C'THUUUN!
+THD_040hp: Idols of Elune
+ULD_131p: Ossirian Tear
+ULDA_BOSS_07p: Druid of the Rat
+ULDA_BOSS_23p: Hatching Time
+ULDA_BOSS_24p: Corrupted Oasis
+ULDA_BOSS_24px: Corrupted Oasis
+ULDA_BOSS_25p: Beetle Stampede
+ULDA_BOSS_32p: Whispering Sentinel
+ULDA_BOSS_62p: Mirage
+ULDA_BOSS_68p: "Upgraded" Fauna
+ULDA_BOSS_71p: Lord of Life
+ULDA_BOSS_71px: Lord of Life
+ULDA_BOSS_77p: Snapping Jaw
+ULDA_BOSS_77px: Snapping Jaw
+ULDA_BOSS_78p: Massive Tentacles
+ULDA_Elise_HP1: Elise's Might
+ULDA_Elise_HP2: Druidic Teaching
+ULDA_Elise_HP3: Starseeker
+VAN_HERO_06bp: Shapeshift
+VAN_HERO_06bp2: Dire Shapeshift
+
+=== HUNTER ===
+AT_132_HUNTER_H1: Ballista Shot
+AV_113p: Summon Pet
+BOM_01_HezrulBloodmark_02p: Hyena Pack
+BOM_02_Sniggles_06p: Tighten Defenses
+BOM_03_Barak_03p: Kolkar Might
+BOM_04_Tavish_005p: Tavish
+BOM_08_Tavish_Campfire_004p: Campfire
+BOM_08_Tavish_Tavish_001p: Call Crabby
+BOM_08_Tavish_Tavish_002p: Call Crabby
+BOM_08_Tavish_Tavish_003p: Call Crabby
+BOM_08_Tavish_Tavish_004p: Cook Up Grub
+BOM_08_Tavish_Tavish_005p: Call Crabby
+BOM_08_Tavish_Tavish_006p: Call Crabby
+BOM_08_Tavish_Tavish_007p: Call Crabby
+BOM_08_Tavish_Tavish_008p: Call Crabby
+BOM_10_Lorthemar_002p: Piercing Judgment
+BTA_01p: The Right Tool
+BTA_BOSS_03p: Ravenous Omnivore
+DALA_Hunter_HP1: Opportunist
+DALA_Hunter_HP2: Pet Training
+DRGA_BOSS_04p: Trusty Whip
+DRGA_BOSS_19p: Rot Aura
+DRGA_BOSS_19p_H: Rot Aura
+DRGA_BOSS_22p: Gronnic Strength
+DRGA_BOSS_22p_H: Gronnic Strength
+DRGA_BOSS_38p: For the Horde!
+DS1h_292_H1: Steady Shot
+DS1h_292_H1_AT_132: Ballista Shot
+DS1h_292_H2: Steady Shot
+DS1h_292_H3: Steady Shot
+DS1h_292_H3_AT_132: Ballista Shot
+EDR_850p: Blessing of the Wolf
+GDB_846hp: Tracking
+HERO_05ahhp: Steady Shot
+HERO_05ahhp2: Ballista Shot
+HERO_05ambp: Steady Shot
+HERO_05ambp2: Ballista Shot
+HERO_05aohp: Steady Shot
+HERO_05aohp2: Ballista Shot
+HERO_05ashp: Steady Shot
+HERO_05ashp2: Ballista Shot
+HERO_05athp: Steady Shot
+HERO_05athp2: Ballista Shot
+HERO_05avhp: Steady Shot
+HERO_05avhp2: Ballista Shot
+HERO_05azhp: Steady Shot
+HERO_05azhp2: Ballista Shot
+HERO_05bfhp: Steady Shot
+HERO_05bfhp2: Ballista Shot
+HERO_05bp: Steady Shot
+HERO_05bp2: Ballista Shot
+HERO_05dbp: Steady Shot
+HERO_05dbp2: Ballista Shot
+HERO_05ybp: Steady Shot
+HERO_05ybp2: Ballista Shot
+HERO_05zbp: Steady Shot
+HERO_05zbp2: Ballista Shot
+PVPDR_Brann_HP1: Spread Shot
+PVPDR_Brann_HP3: Dino Tracking
+PVPDR_DMF_Hunterp1: Death Games
+PVPDR_SCH_Hunterp1: Survival Training
+PVPDR_YOP_HunterP1: Savage Secrets
+RLK_Prologue_Sylvanas_003p: Quick Fire
+Story_02_LeoroxxHP: Reprimand
+Story_02_RexxarHP: Axe Toss Rank 2
+Story_02_RexxarMidHP: Call Misha
+Story_02_RexxarMidHP2: Call Misha Rank 2
+Story_02_RexxarMidHP3: Call Misha Rank 3
+Story_02_RexxarMidHP4: Axe Toss
+Story_02_RexxarWarHP: Friend to Animals
+Story_05_SylvanasHP: Equip Windrunner's Bow
+Story_08_Sylvanas_008p: Calculation
+Story_11_Patrol_001p: Harpoon
+TB_01_BookOfMercs_Tavish_001p: Choose An Ally
+TB_BBR3_BOSS_02p: Rot Aura
+TB_BotB_Mukla_001p: Bananarama
+TB_LEAGUE_REVIVAL_BrannAIHp: Dino Buddies
+TB_ReturningPlayer_HoundmastHP: Fel Whip
+THD_010hp: Ensnare
+THD_012hp: Apex Predator
+THD_042hp: Crack the Whip
+TRL_065h: Berserker Throw
+TRLA_065p: Steady Throw
+TU4d_003: Shotgun Blast
+ULD_155p: Pharaoh's Warmask
+ULDA_BOSS_01p: Boom Bullets
+ULDA_BOSS_01px: Boom Bullets
+ULDA_BOSS_04p: Belch
+ULDA_BOSS_04px: Belch
+ULDA_BOSS_05p: Venomous Stinger
+ULDA_BOSS_08p: Sand Surge
+ULDA_BOSS_08px: Sand Surge
+ULDA_BOSS_13p: Snakeshot
+ULDA_BOSS_41p: Running Wild
+ULDA_BOSS_41px: Running Wild
+ULDA_BOSS_44p: Tricks and Traps
+ULDA_BOSS_44px: Tricks and Traps
+ULDA_BOSS_46p: Maw of the Desert
+ULDA_BOSS_50p: Desert Warfare
+ULDA_BOSS_56p: Sandy Surprise
+ULDA_BOSS_59p: Food Chain
+ULDA_BOSS_59px: Food Chain
+ULDA_BOSS_75p: Hunt the Weak
+ULDA_BOSS_75px: Hunt the Weak
+ULDA_Brann_HP1: Spread Shot
+ULDA_Brann_HP3: Dino Tracking
+UNG_917t1: Dinomancy
+VAN_HERO_05bp: Steady Shot
+VAN_HERO_05bp2: Ballista Shot
+
+=== ROGUE ===
+AT_132_ROGUE_H1: Poisoned Daggers
+AV_203p: Sleight of Hand
+BOM_02_Garona_08p: Equip Kingsbane
+BOM_02_Trixie_05p: Bullseye
+BOM_03_Anacondra_06p: Serpent's Bite
+BOM_04_Scabbs_005p: Scabbs
+BOM_04_Scabbs_006p: Scabbs
+BOM_06_Cariel_001p: Dagger Mastery
+BOM_07_Scabbs_Cookie_007p: What's Cooking?
+BOM_07_Scabbs_Scabbs_001p: Dagger Mastery
+BOM_07_Scabbs_Scabbs_002p: Dagger Mastery
+BOM_07_Scabbs_Scabbs_003p: Poisoned Daggers
+BOM_07_Scabbs_Scabbs_004p: Poisoned Daggers
+BOM_07_Scabbs_Scabbs_008p: Poisoned Daggers
+BTA_BOSS_15p: Corrupted by Rust
+CS2_083b_H1: Dagger Mastery
+CS2_083b_H2: Dagger Mastery
+DALA_BOSS_32p: Makeover
+DALA_Rogue_HP1: Yoink!
+DALA_Rogue_HP2: Cut-less
+DRG_238p2: Galakrond's Guile
+DRGA_BOSS_08p: Maximum Waximum
+DRGA_BOSS_08p_H: Maximum Waximum
+DRGA_BOSS_14p: Guts and Glory
+DRGA_BOSS_29p: Wax Effigy
+DRGA_BOSS_31p: Prepare the Cannons!
+DRGA_BOSS_31p2: Prepare the Cannons!
+DRGA_BOSS_31p_H: Prepare the Cannons!
+HERO_03acbp: Dagger Mastery
+HERO_03acbp2: Poisoned Daggers
+HERO_03afbp: Dagger Mastery
+HERO_03afbp2: Poisoned Daggers
+HERO_03akhp: Dagger Mastery
+HERO_03akhp2: Poisoned Daggers
+HERO_03aqhp: Dagger Mastery
+HERO_03aqhp2: Poisoned Daggers
+HERO_03arhp: Dagger Mastery
+HERO_03arhp2: Poisoned Daggers
+HERO_03axhp: Dagger Mastery
+HERO_03axhp2: Poisoned Daggers
+HERO_03ayhp: Dagger Mastery
+HERO_03ayhp2: Poisoned Daggers
+HERO_03bchp: Dagger Mastery
+HERO_03bchp2: Poisoned Daggers
+HERO_03bdhp: Dagger Mastery
+HERO_03bdhp2: Poisoned Daggers
+HERO_03bp: Dagger Mastery
+HERO_03bp2: Poisoned Daggers
+HERO_03dbp: Dagger Mastery
+HERO_03dbp2: Poisoned Daggers
+HERO_03dbp2_Copy: Poisoned Daggers
+HERO_03dbp_Copy: Dagger Mastery
+HERO_03ebp: Dagger Mastery
+HERO_03ebp2: Poisoned Daggers
+HERO_03mbp: Dagger Mastery
+HERO_03mbp2: Poisoned Daggers
+HERO_03rbp: Dagger Mastery
+HERO_03rbp2: Poisoned Daggers
+HERO_03sbp: Dagger Mastery
+HERO_03sbp2: Poisoned Daggers
+ICC_827p: Death's Shadow
+PVPDR_DMF_Roguep1: Connections
+PVPDR_Reno_HP1: Amateur Mage
+PVPDR_SCH_Roguep1: Roguish Maneuvers
+PVPDR_YOP_RogueP1: Vile Concoction
+Story_02_CentaurHP: Kidnap!
+Story_02_QuilboarHP: Get Over Here!
+Story_04_BlademasterHP: Blade Tempest
+Story_05_MonkeyKingHP: Flying Monkey Kick
+Story_06_Daerion_03p: Sharp Idea
+Story_06_Garona_06p: Equip Kingslayers
+Story_06_Jorach_08p: Shrouded in Mystery
+Story_06_Valeera_03p: Elusiveness
+Story_06_Valeera_04p: Elusiveness Rank 2
+Story_06_Valeera_05p: Sleight of Hand
+Story_06_Valeera_06p: Sleight of Hand Rank 2
+Story_06_Valeera_07p: Fan of Knives
+Story_06_Valeera_08p: Fan of Knives Rank 2
+Story_10_Anubarak_006p: Web Wrath
+Story_10_Maiev_003p: Equip Warden's Glaive
+Story_11_Grace_005p: Swash!
+Story_11_GracefulBlade_005p: Graceful Blade
+Story_11_Hooktusk_003p: Ransom
+TB_01_BOM_Mercs_Scabbs_001p: Scabbs
+TB_BBR3_BOSS_06p: Corrupted by Rust
+TB_BlingBrawl_Hero1p: Sharpen
+TB_BotB_Blingtron_001p: Gift of Rhyme
+TB_DK_Valeera_HP: Death's Shadow
+TB_Henchmania_MyraH: Necrium Infusion
+TB_LEAGUE_REVIVAL_TerravisHp: Well Equipped
+TB_RoadToNR_TakNozwhiskerHP: Make Enemies
+THD_023hp: Sleight of Hand
+THD_024hp: Investment
+THD_025hp: I'm in Charrrge!
+TP_Bling_HP2: Cash In
+ULD_326p: Ancient Blades
+ULDA_BOSS_10p: Well Equipped
+ULDA_BOSS_14p: Sword Dance
+ULDA_BOSS_17p: Spreading the Curse
+ULDA_BOSS_17px: Spreading the Curse
+ULDA_BOSS_20p: Spectral Swordsman
+ULDA_BOSS_27p: "Retired" Treasure Hunter
+ULDA_BOSS_27px: "Retired" Treasure Hunter
+ULDA_BOSS_38p1: Evoke Panic
+ULDA_BOSS_38p2: Systematic Betrayal
+ULDA_BOSS_38p3: Murmurs of Mortality
+ULDA_BOSS_38px1: Evoke Panic
+ULDA_BOSS_38px3: Murmurs of Mortality
+ULDA_BOSS_53p: E.V.I.L. Conscription
+ULDA_BOSS_53px: E.V.I.L. Conscription
+ULDA_BOSS_65p: Ogre-Sized Thief
+ULDA_BOSS_65px: Ogre-Sized Thief
+ULDA_Reno_HP1: Amateur Mage
+VAN_HERO_03bp: Dagger Mastery
+VAN_HERO_03bp2: Poisoned Daggers
+
+=== WARLOCK ===
+AT_132_WARLOCKa: Soul Tap
+AT_132_WARLOCKb: Soul Tap
+AV_316hp: Chains of Dread
+BOM_01_Feegly_07p: Power of the Shard
+BOM_01_Tamsin_04p3: Tamsin
+BOM_01_Tamsin_05p3: Tamsin
+BOM_01_Tamsin_06p3: Tamsin
+BOM_01_Tamsin_07p3: Tamsin
+BOM_03_Naralex_08p: Void Shard
+BOM_03_Tamsin_02p: Tamsin
+BOM_04_Kazakus_006p: Potion
+BOM_04_Neeru_007p: Galtak Ered'nash
+BOM_04_Rathorian_005p: Dirty Cheat
+BOM_04_Tamsin_008p: Swarm of Imps
+BOM_04_Tavish_006p: Tavish
+BOM_05_Tamsin_001p: Swarm of Imps
+BOM_05_Tamsin_002p: Swarm of Imps
+BOM_05_Tamsin_003p: Yo Ho!
+BOM_05_Tamsin_004p: Swarm of Imps
+BOM_05_Tamsin_005p: Forsaken Fury
+BOM_05_Tamsin_006p: Forsaken Fury
+BOM_05_Tamsin_007p: Forsaken Fury
+BOM_06_Anetheron_005p: Dreadlord's Slash
+BOM_06_Anetheron_005p2: The Dreadlord Double
+BOM_06_Anetheron_006p: Legion's Might
+BOM_06_Tamsin_008p: Swarm of Imps
+BOM_06_Xurgon_004p: Demon Little Dream
+BOM_08_Tavish_Kazakus_007p: Potion
+BOM_08_Tavish_Kazakusan_008p: Dragon's Roar
+BOM_09_Tamsin_001p: Chains of Dread
+BOM_09_Tamsin_008p: Defile
+BOM_09_Vanndar_007p: Ramming Speed
+BTA_BOSS_02p: Rusted Gaze
+BTA_BOSS_05p: Rebuild from Scrap
+BTA_BOSS_14p: Unlikely Challenger
+BTA_BOSS_16p: Of Fel and Hatred
+BTA_BOSS_22p: Shadow of Death
+BTA_BOSS_25p: Pyromancy
+BTA_BOSS_26p: Burning Rage
+CS2_056_H1: Life Tap
+CS2_056_H2: Life Tap
+CS2_056_H3: Life Tap
+DALA_Warlock_HP1: Pain Split
+DALA_Warlock_HP2: The Pact
+DRG_238p3: Galakrond's Malice
+DRGA_06: The Gauntlet of Origination
+DRGA_BOSS_07p: Gauntlet of Origination
+DRGA_BOSS_07p2: Summon Galakrond
+DRGA_BOSS_07p3: Summon Galakrond
+DRGA_BOSS_07p4: Gauntlet of Origination
+DRGA_BOSS_18p: Dragonbone Ritual
+DRGA_BOSS_18p_H: Dragonbone Ritual
+DRGA_BOSS_21p: From Below
+DRGA_BOSS_24p: Annihilation
+DRGA_BOSS_24p_H: Annihilation
+EX1_tk33: INFERNO!
+HERO_07agbp: Life Tap
+HERO_07amhp: Life Tap
+HERO_07amhp2: Soul Tap
+HERO_07anhp: Life Tap
+HERO_07anhp2: Soul Tap
+HERO_07aqhp: Life Tap
+HERO_07aqhp2: Soul Tap
+HERO_07arhp: Life Tap
+HERO_07arhp2: Soul Tap
+HERO_07axhp: Life Tap
+HERO_07axhp2: Soul Tap
+HERO_07azhp: Life Tap
+HERO_07azhp2: Soul Tap
+HERO_07bbhp: Life Tap
+HERO_07bbhp2: Soul Tap
+HERO_07bchp: Life Tap
+HERO_07bchp2: Soul Tap
+HERO_07bdhp: Life Tap
+HERO_07bdhp2: Soul Tap
+HERO_07bghp: Life Tap
+HERO_07bghp2: Soul Tap
+HERO_07bp: Life Tap
+HERO_07bp2: Soul Tap
+HERO_07dbp: Life Tap
+HERO_07dbp2: Soul Tap
+HERO_07ebp: Life Tap
+HERO_07ebp2: Soul Tap
+HERO_07ebp2_Copy: Soul Tap
+HERO_07ybp: Life Tap
+HERO_07ybp2: Soul Tap
+HERO_07zbp: Life Tap
+HERO_07zbp2: Soul Tap
+Prologue_MannorothHP: Felstorm
+PVPDR_DMF_Warlockp1: Demon Blood
+PVPDR_GUEST_Diablop3: Demonic Transformation
+PVPDR_SCH_Warlockp2: Dark Arts
+PVPDR_SCH_Warlockp3: Soulcial Studies
+Story_04_DarkPortalHP: Grim Retreat
+Story_04_MalGanisHP: Nathrezim's Favor
+Story_06_ChoGall_07p: Shadow Volley
+Story_06_Valeera_09p: Fel Portal
+Story_06_Vendellin_04p: Possession
+Story_07_Mannoroth_004p: Blood Curse
+Story_08_Mannoroth_002p: Felstorm
+Story_09_Guldan_004p: Cup of Unity
+Story_09_Guldan_005p: Demonic Replacement
+Story_09_Guldan_006p: Demonic Replacement Rank 2
+Story_09_Guldan_007p: Rain of Destruction
+Story_09_Guldan_008p: Rain of Destruction Rank 2
+Story_09_TombGuardian_008p: Eye of Sargeras
+Story_10_Tichondrius_002p: Carrion Swarm
+Story_11_Jailor_013p: Shackled
+Story_11_Ozumat_007p: Tentacles of Ozumat
+TB_LEAGUE_REVIVAL_TekahnAIHp: EVIL Grasp
+THD_029hp: Awaken the Flame
+THD_030hp: Demon Blood
+THD_032hp: I Think I Will Take It!
+THD_039hp: Rise Again!
+THD_102hp: Blood Pact
+THD_102hpt3: Soulbound
+THD_103hp: Twisting Nether
+ULD_140p: Tome of Origination
+ULDA_BOSS_06p: "Confiscated" Goods
+ULDA_BOSS_18p: Plagued Horde
+ULDA_BOSS_18px: Plagued Horde
+ULDA_BOSS_43p: Spoil the Ending
+ULDA_BOSS_43px: Spoil the Ending
+ULDA_BOSS_47p: What's in the Jar?
+ULDA_BOSS_49p: Demon Emissary
+ULDA_BOSS_49px: Demon Emissary
+ULDA_BOSS_60p: Forbidden Power
+ULDA_BOSS_60px: Forbidden Power
+ULDA_BOSS_67p1: Awaken the Flame
+ULDA_BOSS_67p2: Curse of Flame
+ULDA_BOSS_67p3: Soul Pyre
+VAN_EX1_tk33: INFERNO!
+VAN_HERO_07bp: Life Tap
+VAN_HERO_07bp2: Soul Tap
+
+=== MAGE ===
+AV_200p2: Arcane Burst
+BOM_01_Dawngrasp_05p4: Dawngrasp
+BOM_01_Dawngrasp_06p4: Dawngrasp
+BOM_01_Dawngrasp_07p4: Dawngrasp
+BOM_02_Octobot_07p: Eight-armed Freak
+BOM_03_Dawngrasp_02p: Dawngrasp
+BOM_03_Vapos_02p: Elementary
+BOM_04_Dawngrasp_006p: Freeze Dance
+BOM_04_Sarilus_004p: Icy Touch
+BOM_06_YoungTamsin_001p: Up Her Sleeve
+BOM_09_Dawngrasp_003p: Dawngrasp
+BOM_10_Dawngrasp_001p: Fireblast
+BOM_10_Dawngrasp_002p: Fireblast Rank 2
+BOM_10_Dawngrasp_003p: Icy Touch
+BOM_10_Dawngrasp_004p: Freeze Dance
+BOM_10_Dawngrasp_005p: Arcane Burst
+BOM_10_Dawngrasp_006p: Arcane Burst
+BOM_10_Dawngrasp_007p: Arcane Burst
+BOM_10_Dawngrasp_008p: Arcane Burst
+BOM_10_OnyxiaPhase1_004p: Onyxian Fire
+BOM_10_OnyxiaPhase2_005p: Hatchery
+BOM_10_OnyxiaPhase3_006p: Onyxia's Might
+BOM_10_UndeadOnyxia_007p: Give Chase
+CS2_034_H1: Fireblast
+CS2_034_H1_AT_132: Fireblast Rank 2
+CS2_034_H2: Fireblast
+CS2_034_H2_AT_132: Fireblast Rank 2
+CS2_034_H3: Fireblast
+CS2_034_H3_AT_132: Fireblast Rank 2
+CS2_034_H4: Fireblast
+DAL_579p: Cobalt Leyline
+DALA_Mage_HP1: Burning Wit
+DALA_Mage_HP2: Frostburn
+DRGA_BOSS_01p: Gatling Magic
+DRGA_BOSS_01p2: Flap-plosion
+DRGA_BOSS_01p3: Gatling Magic
+DRGA_BOSS_01p_H: Gatling Magic
+DRGA_BOSS_10p: Sculpted Ice
+DRGA_BOSS_10p_H: Sculpted Ice
+DRGA_BOSS_16p: Burn...
+DRGA_BOSS_16p2: BURN!!!
+DRGA_BOSS_25p: Snowstorm
+DRGA_BOSS_25p_H: Snowstorm
+DRGA_BOSS_26p: Dragon Affinity
+DRGA_BOSS_26p2: Flame Affinity
+DRGA_BOSS_35p: Summon Elemental
+DRGA_BOSS_36p: Chronoecho
+DRGA_BOSS_36p2: Chronomical Distortion
+EDR_851p: Blessing of the Wisp
+FB_Toki2_Hero: Join Forces
+HERO_08aabp: Fireblast
+HERO_08aabp2: Fireblast Rank 2
+HERO_08aebp: Fireblast
+HERO_08aebp2: Fireblast Rank 2
+HERO_08albp: Fireblast
+HERO_08albp2: Fireblast Rank 2
+HERO_08ambp: Fireblast
+HERO_08ambp2: Fireblast Rank 2
+HERO_08ashp: Fireblast
+HERO_08ashp2: Fireblast Rank 2
+HERO_08azhp: Fireblast
+HERO_08azhp2: Fireblast Rank 2
+HERO_08bchp: Fireblast
+HERO_08bchp2: Fireblast Rank 2
+HERO_08bghp: Fireblast
+HERO_08bghp2: Fireblast Rank 2
+HERO_08bp: Fireblast
+HERO_08bp2: Fireblast Rank 2
+HERO_08dbp: Fireblast
+HERO_08dbp2: Fireblast Rank 2
+HERO_08ebp: Fireblast
+HERO_08ebp2: Fireblast Rank 2
+HERO_08fbp: Fireblast
+HERO_08fbp2: Fireblast Rank 2
+HERO_08fbp3: Fireblast - Prestor
+HERO_08lbp: Fireblast
+HERO_08lbp2: Fireblast Rank 2
+HERO_08tbp: Fireblast
+HERO_08tbp2: Fireblast Rank 2
+HERO_08xbp: Fireblast
+HERO_08xbp2: Fireblast Rank 2
+PVPDR_DMF_Magep1: Secret Studies
+PVPDR_Reno_HP2: "Relicologist"
+PVPDR_Reno_HP3: Arcane Craftiness
+PVPDR_SCH_Magep3: Wyrm Bolt
+PVPDR_YOP_MageP1: Frost Shards
+Story_01_JainaHP: Icefall
+Story_01_JainaHP2: Icefall Rank 2
+Story_01_JainaMidHP: Summon Elemental
+Story_01_JainaMidHP2: Summon Elemental Rank 3
+Story_01_JainaMidHP3: Summon Elemental Rank 2
+Story_01_JainaYoungHP: Iceblast
+Story_01_JainaYoungHP2: Iceblast Rank 2
+Story_01_JainaYoungHP3: Iceblast Rank 3
+Story_03_JainaHP: Summon Elemental
+Story_05_JainaHP: Polymorphonics
+Story_06_Stasia_05p: Freeze Out
+Story_07_Jaina_007p: Focusing Iris
+Story_07_Jaina_007p2: Icefall
+Story_09_Medivh_005p: Equip Atiesh
+Story_11_Azshara_016p: Light of Lights
+Story_11_Ini_001p: Quick Fix
+Story_11_Ini_004p: Quick Fix
+Story_11_Ini_008p: Quick Fix
+Story_11_Ini_014p: Quick Fix
+Story_11_Ruins_011p: Ancient Memories
+TB_01_BOM_Mercs_Dawngrasp_001p: Dawngrasp
+TB_BBR3_BOSS_03p1: Lich's Phylactery
+TB_BBR3_BOSS_03p2: Broken Phylactery
+TB_BotB_Manastorm_001p: Build Up
+TB_BotB_Manastorm_002p: Beat Drop
+TB_LEAGUE_REVIVAL_RenoAIHp: Gatling Wand
+TB_MagicalGuardians_Fireblast: Fireblast
+TB_MagicalGuardians_Fireblast2: Fireblast Rank 2
+TB_RoadToNR_RenoHP: Practice
+THD_013hp: Frostburn
+THD_015hp: Firestarting
+THD_017hp: Command Magic
+THD_017hp2: Command Naga
+THD_017hp3: Command Magic
+THD_043hp: Unstable Magic
+TUTR_HERO_08bp: Fireblast
+ULD_433p: Ascendant Scroll
+ULDA_BOSS_11p: Unstable Weaponry
+ULDA_BOSS_26p: Gatling Wand
+ULDA_BOSS_30p: Fireshaper
+ULDA_BOSS_52p1: Lich's Phylactery
+ULDA_BOSS_52p2: Broken Phylactery
+ULDA_BOSS_69p: Mistress of Magic
+ULDA_BOSS_70p: Lord of the Sun
+ULDA_BOSS_70px: Lord of the Sun
+ULDA_Reno_HP2: "Relicologist"
+ULDA_Reno_HP3: Arcane Craftiness
+VAN_HERO_08bp: Fireblast
+VAN_HERO_08bp2: Fireblast Rank 2
+YOD_009h: What Does This Do?
+
+=== WARRIOR ===
+AV_202p: Grand Slam
+BOM_01_Garrosh_08p: Equip Gorehowl
+BOM_01_Rokara_01p: Early Axes
+BOM_01_Rokara_03p: Ask for Help
+BOM_01_Rokara_04p: Ask for Help
+BOM_01_Rokara_05p: Ask for Help
+BOM_01_Rokara_06p: Ask for Help
+BOM_01_Rokara_07p: Ask for Help
+BOM_01_Rokara_08p: Axe and Receive
+BOM_01_Twinbraid_06p: Armored Slam
+BOM_02_BigRedButton_04p: Big Red Button
+BOM_02_Kargal_01p: Keep Watch
+BOM_02_Xyrella_05p: Big Red Button
+BOM_03_Rokara_02p: Rokara
+BOM_04_Samuro_001p: Bladestorm
+BOM_05_Cornelius_008p: Stalwart
+BOM_05_Rokara_004p: For the Frostwolves!
+BOM_06_Cornelius_003p: Armor Up Up Up!
+BOM_06_Monstrosity_007p: Monstrous Power
+BOM_07_Scabbs_Smite_006p: Juggernaut Control
+BOM_08_Tavish_Rokara_003p: Grand Slam
+BOM_08_Vanndar_001hp: High Marshall
+BOM_09_Rokara_003p: Rokara
+BOM_09_Snivvle_004p: Cruel Words
+BOM_10_Varian_003p: Equip Shalamayne
+BOT_238p: Big Red Button
+BOT_238p1: Zap Cannon
+BOT_238p2: Blast Shield
+BOT_238p3: KABOOM!
+BOT_238p4: Delivery Drone
+BOT_238p6: Micro-Squad
+BTA_BOSS_08p: Parry and Riposte
+BTA_BOSS_11p: Rocket Wings
+BTA_BOSS_14p2: Hulking Monstrosity
+BTA_BOSS_23p: Parry and Riposte
+CS2_102_H1: Armor Up!
+CS2_102_H1_AT_132: Tank Up!
+CS2_102_H2: Armor Up!
+CS2_102_H2_AT_132: Tank Up!
+CS2_102_H3: Armor Up!
+CS2_102_H3_AT_132: Tank Up!
+CS2_102_H4: Armor Up!
+CS2_102_H4_AT_132: Tank Up!
+DALA_Warrior_HP1: Invigorating Brew
+DALA_Warrior_HP2: Undermine
+DRG_238p: Galakrond's Might
+DRGA_BOSS_05p: SUMMON THE BOTS!
+DRGA_BOSS_05p_H: SUMMON THE BOTS!
+DRGA_BOSS_28p: True Power
+DRGA_BOSS_28p2: Galakrond's Vanguard
+DRGA_BOSS_30p: Prepare the Cannons!
+DRGA_BOSS_30p_H: Prepare the Cannons!
+HERO_01aabp: Armor Up!
+HERO_01aabp2: Tank Up!
+HERO_01acbp: Armor Up!
+HERO_01acbp2: Tank Up!
+HERO_01aphp: Armor Up!
+HERO_01aphp2: Tank Up!
+HERO_01aqhp: Armor Up!
+HERO_01aqhp2: Tank Up!
+HERO_01auhp: Armor Up!
+HERO_01auhp2: Tank Up!
+HERO_01awhp: Armor Up!
+HERO_01awhp2: Tank Up!
+HERO_01axhp: Armor Up!
+HERO_01axhp2: Tank Up!
+HERO_01ayhp: Armor Up!
+HERO_01ayhp2: Tank Up!
+HERO_01azhp: Armor Up!
+HERO_01azhp2: Tank Up!
+HERO_01bahp: Armor Up!
+HERO_01bahp2: Tank Up!
+HERO_01bbhp: Armor Up!
+HERO_01bbhp2: Tank Up!
+HERO_01bdhp: Armor Up!
+HERO_01bdhp2: Tank Up!
+HERO_01bp: Armor Up!
+HERO_01bp2: Tank Up!
+HERO_01dbp: Armor Up!
+HERO_01dbp2: Tank Up!
+HERO_01fbp: Armor Up!
+HERO_01fbp2: Tank Up!
+HERO_01obp: Armor Up!
+HERO_01obp2: Tank Up!
+HERO_01qbp: Armor Up!
+HERO_01qbp2: Tank Up!
+HERO_01vbp: Armor Up!
+HERO_01vbp2: Tank Up!
+HERO_01wbp: Armor Up!
+HERO_01wbp2: Tank Up!
+ICC_834h: Bladestorm
+KARA_13_02: The Horde
+KARA_13_02H: The Horde
+PVPDR_Brann_HP2: Well Equipped
+PVPDR_DMF_Warriorp1: Bruising
+PVPDR_GUEST_Diablop1: Doom Charge
+PVPDR_GUEST_Diablop2: Primal Power
+PVPDR_GUEST_Diablop5: Uber Primal Power
+PVPDR_SCH_Warriorp1: No Guts, No Glory
+PVPDR_YOP_WarriorP1: Magnetic Mines
+Story_02_BlackhandHP: Backhand
+Story_02_GorgromHP: Monstrous Growth
+Story_03_CairneHP: War Stomp
+Story_03_GarroshArmadaHP: Horde Armada
+Story_03_GarroshHP: Summon Peon
+Story_03_GarroshHP2: Summon Peon Rank 2
+Story_03_GarroshMidHP: Equip Gorehowl
+Story_03_GarroshMidHP2: Equip Gorehowl Rank 2
+Story_03_GarroshMidHP3: Equip Gorehowl Rank 3
+Story_04_DoomhammerHP: Equip Doomhammer
+Story_04_SaurfangHP: Unbound Rage
+Story_05_GarroshHP: Equip Gorehowl
+Story_05_NazgrimHP: No Escape!
+Story_05_SaurfangHP: Bold Determination
+Story_05_VarianHP: Scold
+Story_06_Helka_02p: Fight's On!
+Story_07_Garrosh_008p2: Equip Gorehowl
+Story_08_Saurfang_008p: Survival of the Horde
+Story_09_Blackhand_004p: Instruments of War
+Story_09_Orgrim_006p: Warchief's Vengeance
+Story_09_Warrior_001p: Bully the Weak
+Story_11_Halus_010p: Bold Charge
+Story_11_Looter_002p: Stolen Coins
+Story_11_NagaSpear_010p: Ancient Trident
+TB_01_BookOfMercs_Rokara_001p: Ask for Help
+TB_BBR3_Boss_04p: SUMMON THE BOTS!
+TB_BBR3_BOSS_11p: Parry and Riposte
+TB_BotB_Voone_001p: Shredding
+TB_EVILBRM_BoomHeroPower: Overmine
+TB_Henchmania_ChuH: Undermine
+THD_034hp2: Boomspiration
+THD_035hp: No Guts, No Glory
+THD_106hp: Riffraff
+TUTR_HERO_01bp: Armor Up!
+ULD_711p3: Anraphet's Core
+ULDA_BOSS_03p: E.V.I.L. Promotion
+ULDA_BOSS_09p: Armor Repairs
+ULDA_BOSS_16p: Under Wraps
+ULDA_BOSS_19p: Titan Ritual
+ULDA_BOSS_19px: Titan Ritual
+ULDA_BOSS_22p: Power of Wrath
+ULDA_BOSS_22px: Power of Wrath
+ULDA_BOSS_33p: Out of Control
+ULDA_BOSS_34p: Tomb Boomin'
+ULDA_BOSS_36p: Madness Incarnate
+ULDA_BOSS_36px: Madness Incarnate
+ULDA_BOSS_40p1: Commanding Scream
+ULDA_BOSS_40p2: Wrath Smash
+ULDA_BOSS_40p3: Hand of Defiance
+ULDA_BOSS_40px2: Wrath Smash
+ULDA_BOSS_48p: Arena Expert
+ULDA_BOSS_54p: Cavalry of E.V.I.L.
+ULDA_BOSS_61p: Chain Lightning
+ULDA_BOSS_61px: Chain Lightning
+ULDA_BOSS_73p: Shockwave
+ULDA_BOSS_79p: Mech "Pilot"
+ULDA_Brann_HP2: Well Equipped
+VAN_CS2_102_H3: Armor Up!
+VAN_HERO_01bp: Armor Up!
+VAN_HERO_01bp2: Tank Up!
+
+=== DEMONHUNTER ===
+AV_204p: Ashfallen's Fury
+BOM_04_Aranna_002p: Combination Strike
+BOM_04_Kurtrus_001p: Fashion Weapon (Rank 1)
+BOM_04_Kurtrus_001p1: Fashion Weapon (Rank 2)
+BOM_04_Kurtrus_001p2: Fashion Weapon (Rank 3)
+BOM_04_Kurtrus_001p3: Fashion Weapon (Rank 4)
+BOM_04_Kurtrus_001p4: Fashion Weapon
+BOM_04_Kurtrus_05p: Choose an Ally
+BOM_04_Kurtrus_06p: Choose an Ally
+BOM_05_Kurtrus_001p: Fel Fury
+BOM_05_Tamsin_008p: Forsaken Fury
+BOM_06_Cariel_005p2: Kurtrus Ashfallen
+BOM_06_Kurtrus_002p: Fashion Weapon
+BT_429p: Demonic Blast
+BT_429p2: Demonic Blast
+BTA_02p: Combination Strike
+HERO_10akhp: Demon Claws
+HERO_10akhp2: Demon's Bite
+HERO_10amhp: Demon Claws
+HERO_10amhp2: Demon's Bite
+HERO_10ashp: Demon Claws
+HERO_10ashp2: Demon's Bite
+HERO_10auhp: Demon Claws
+HERO_10auhp2: Demon's Bite
+HERO_10awhp: Demon Claws
+HERO_10awhp2: Demon's Bite
+HERO_10azhp: Demon Claws
+HERO_10azhp2: Demon's Bite
+HERO_10bbp: Demon Claws
+HERO_10bbp2: Demon's Bite
+HERO_10bdhp: Demon Claws
+HERO_10bdhp2: Demon's Bite
+HERO_10bp: Demon Claws
+HERO_10bp2: Demon's Bite
+HERO_10cbp: Demon Claws
+HERO_10cbp2: Demon's Bite
+HERO_10lbp: Demon Claws
+HERO_10lbp2: Demon's Bite
+HERO_10xbp: Demon Claws
+HERO_10xbp2: Demon's Bite
+HERO_10zbp: Demon Claws
+HERO_10zbp2: Demon's Bite
+PVPDR_DMF_DemonHunterp1: Outlander
+PVPDR_SCH_DemonHunterp1: Infernal Strike
+PVPDR_YOP_DemonHunterP1: Illidari Strike
+RLK_Prologue_Illidan_004p: Demon Claws
+RLK_Prologue_Illidan_004p2: Demonic Blast
+Story_10_Illidan_003p: Skull of Gul'dan
+Story_10_Illidan_004p: Skull of Gul'dan Rank 2
+Story_10_Illidan_005p: Outlast
+Story_10_Illidan_006p: Outlast Rank 2
+Story_10_Illidan_007p: Equip Warglaives
+Story_10_Illidan_008p: Call on Allies
+TB_01_BOM_Mercs_Kurtrus_001p: Kurtrus
+TB_BBR3_BOSS_10p: Burning Rage
+TB_BotB_Halveria_001p: Equip Sorrowchord
+THD_004hp: Demon Spite
+THD_005hp: Spin Claw
+THD_006hp: Encore
+THD_107hp: Song of Angst
+TOY_400t6p: Demonic Blast
+TOY_400t6p2: Demonic Blast
+TWI_002hp: Drawn to Demons
+TWI_003hp: Spin Claw
+TWI_005hp: I'm in Charrrge!
+VAN_HERO_10bp: Demon Claws
+VAN_HERO_10bp2: Demon's Bite
+
+=== PALADIN ===
+AV_206p: Blessing of Queens
+BOM_02_Whirleygig_04p: On the Loose!
+BOM_03_Party_05p: Help Wanted
+BOM_03_Smythe_04p: To Your Stations!
+BOM_04_Cariel_005p: Cariel
+BOM_04_Cariel_006p: Cariel
+BOM_06_Cariel_002p: Hand of Protection
+BOM_06_Cariel_003p: Hand of Protection
+BOM_06_Cariel_004p: The Silver Hand
+BOM_06_Cariel_005p: The Silver Hand
+BOM_06_Cariel_006p: Holy Light
+BOM_06_Cariel_006p2: Redemption
+BOM_06_Cariel_007p: The Silver Hand
+BOM_06_Cariel_008p: The Silver Hand
+CS2_101_H1: Reinforce
+CS2_101_H1_AT_132: The Silver Hand
+CS2_101_H2: Reinforce
+CS2_101_H2_AT_132: The Silver Hand
+CS2_101_H3: Reinforce
+CS2_101_H3_AT_132: The Silver Hand
+CS2_101_H4: Reinforce
+DALA_Paladin_HP1: Backup
+DALA_Paladin_HP2: Boon of Light
+DRGA_BOSS_03p: Lead the Charge
+DRGA_BOSS_03p_H: Lead the Charge
+DRGA_BOSS_11p: Golden Blade
+DRGA_BOSS_11p_H: Golden Blade
+DRGA_BOSS_12p: Golden Aegis
+DRGA_BOSS_12p_H: Golden Aegis
+DRGA_BOSS_23p: Dragonblood
+EDR_445p: Blessing of the Dragon
+HERO_04aibp: Reinforce
+HERO_04aibp2: The Silver Hand
+HERO_04aphp: Reinforce
+HERO_04aphp2: The Silver Hand
+HERO_04auhp: Reinforce
+HERO_04auhp2: The Silver Hand
+HERO_04ayhp: Reinforce
+HERO_04ayhp2: The Silver Hand
+HERO_04bchp: Reinforce
+HERO_04bchp2: The Silver Hand
+HERO_04bdhp: Reinforce
+HERO_04bdhp2: The Silver Hand
+HERO_04bp: Reinforce
+HERO_04bp2: The Silver Hand
+HERO_04ebp: Reinforce
+HERO_04ebp2: The Silver Hand
+HERO_04fbp: Reinforce
+HERO_04fbp2: The Silver Hand
+HERO_04fbp3: Reinforce_Yrel
+HERO_04lbp: Reinforce
+HERO_04lbp2: The Silver Hand
+HERO_04ubp: Reinforce
+HERO_04ubp2: The Silver Hand
+HERO_04wbp: Reinforce
+HERO_04wbp2: The Silver Hand
+OG_006b: The Tidal Hand
+PVPDR_DMF_Paladinp1: Bring on Recruits
+PVPDR_Finley_HP1: New "Recruits"
+PVPDR_Finley_HP3: Power Up!
+PVPDR_SCH_Paladinp1: From Golden Light
+PVPDR_YOP_PaladinP1: Modest Aspirations
+RLK_Prologue_Arthas_001p: Reinforce
+RLK_Prologue_Uther_002p: Equip Lightbringer
+Story_04_UtherHP: Equip Lightbringer
+Story_04_UtherHP2: Equip Lightbringer Rank 2
+Story_04_UtherHP3: Divine Storm
+Story_04_UtherHP4: Divine Storm Rank 2
+Story_04_YoungUtherHP: Bombard Portal
+TB_01_BOM_Mercs_Cariel_001p: Cariel
+TB_BotB_Kangor_001p: Get on the Floor
+TB_BotB_Kangor_002p: Light Up the Stage
+TB_RoadToNR_Finley_HP: Power Up!
+THD_019hp: Reckless Reinforcements
+THD_020hp: Dragonflight
+THD_037hp: Wrynnfury
+THD_044hp: Float Up!
+THD_108hp: Patience
+THD_108hp2: Patience
+ULD_431p: Emperor Wraps
+ULDA_BOSS_21p: Staking A Claim
+ULDA_BOSS_45p: Reliquary's Relics
+ULDA_BOSS_57p: Titan's Beast
+ULDA_BOSS_57px: Titan's Beast
+ULDA_BOSS_76p: Noble Champion
+ULDA_BOSS_76px: Noble Champion
+ULDA_Finley_HP1: New "Recruits"
+ULDA_Finley_HP3: Power Up!
+VAN_HERO_04bp: Reinforce
+VAN_HERO_04bp2: The Silver Hand
+
+=== PRIEST ===
+AV_207p: Holy Touch
+AV_207p2: Void Spike
+BOM_02_Serena_02p: Shadow Wing
+BOM_02_Xyrella_01p1: Heal
+BOM_02_Xyrella_01p2: Resurrect
+BOM_04_Sangtusk_003p: Sanguimancy
+BOM_04_Xyrella_005p: Xyrella
+BOM_04_Xyrella_006p: Xyrella
+BOM_05_Bolvar_007p: For the Alliance!
+BOM_05_Xyrella_006p: Naaru's Light
+BOM_05_Xyrella_006p2: Mind Spike
+BOM_10_DarkNaaru_008p: Void Nightmare
+CS1h_001_H1: Lesser Heal
+CS1h_001_H1_AT_132: Heal
+CS1h_001_H2: Lesser Heal
+CS1h_001_H2_AT_132: Heal
+CS1h_001_H3: Lesser Heal
+DALA_Priest_HP1: Distort
+DALA_Priest_HP2: Soothe
+DRG_238p5: Galakrond's Wit
+DRGA_BOSS_09p: Fortune
+DRGA_BOSS_09p_H: Fortune
+DRGA_BOSS_13p: Wings of Rebirth
+DRGA_BOSS_13p_H: Wings of Rebirth
+DRGA_BOSS_37p: For the Alliance!
+EDR_449p: Blessing of the Moon
+EX1_625t: Mind Spike
+EX1_625t2: Mind Shatter
+HERO_09abbp: Lesser Heal
+HERO_09abbp2: Heal
+HERO_09agbp: Lesser Heal
+HERO_09agbp2: Heal
+HERO_09ajhp: Lesser Heal
+HERO_09ajhp2: Heal
+HERO_09aqhp: Lesser Heal
+HERO_09aqhp2: Heal
+HERO_09arhp: Lesser Heal
+HERO_09arhp2: Heal
+HERO_09athp: Lesser Heal
+HERO_09athp2: Heal
+HERO_09bahp: Lesser Heal
+HERO_09bahp2: Heal
+HERO_09bp: Lesser Heal
+HERO_09bp2: Heal
+HERO_09dbp: Lesser Heal
+HERO_09dbp2: Heal
+HERO_09dbp2_Copy: Heal
+HERO_09dbp_Copy: Lesser Heal
+ICC_830p: Voidform
+PVPDR_DMF_Priestp1: Mind Tether
+PVPDR_SCH_Priestp1: Shadow Mend
+PVPDR_YOP_PriestP1: Call of Madness
+Story_04_AlonsusHP: Holy Prayer
+Story_05_AnduinHP: Light Thinking
+Story_05_AnduinHP2: Harmonic Mallet
+Story_05_AnduinKingHP: Equip Shalamayne
+Story_05_MoiraHP: Royal Entourage
+Story_05_VelenHP: Blessed Cycle
+Story_11_Caye_012p: Motivate
+Story_11_Caye_013p: Motivate Rank 2
+Story_11_Statue_010p: Zin-Azshari Crystal
+TB_01_BOM_Mercs_Xyrella_001p: Xyrella
+TB_BBR3_BOSS_05p: Wings of Rebirth
+TB_BotB_Hedanis_001p: Pop Power
+THD_021hp: Empty the Mind
+THD_022hp: Spark of Light
+THD_104hp: Captive Audience
+ULD_724p: Obelisk's Eye
+ULDA_BOSS_02p: Mummy Ritual
+ULDA_BOSS_02px: Mummy Ritual
+ULDA_BOSS_37p1: Foreboding Fate
+ULDA_BOSS_37p2: Death's Embrace
+ULDA_BOSS_37p3: Death's Gaze
+ULDA_BOSS_37px3: Death's Gaze
+ULDA_BOSS_51p: Tol'vir Necromancy
+ULDA_BOSS_58p: Riddle of the Sphinx
+ULDA_BOSS_72p: Lord of Destruction
+ULDA_BOSS_74p: Burst of Light
+ULDA_BOSS_74px: Burst of Light
+VAN_HERO_09bp: Lesser Heal
+VAN_HERO_09bp2: Heal
+
+=== NEUTRAL ===
+AV_751: ???
+AV_760: Move
+BAR_734: ???
+BAR_747: ???
+BAR_753: ???
+BAR_761: ???
+BG20_HERO_100p: Glory of Combat
+BG20_HERO_101p: See the Light
+BG20_HERO_102p: For the Horde!
+BG20_HERO_103p: Bloodbound
+BG20_HERO_201p: Spirit Swap
+BG20_HERO_201p2: Spirit Swap
+BG20_HERO_202p: Power of the Storm
+BG20_HERO_242p: Natural Balance
+BG20_HERO_280p: Final Showdown
+BG20_HERO_280p2: Gain Momentum
+BG20_HERO_280p3: Close the Portal
+BG20_HERO_280p5: Glaive Ricochet
+BG20_HERO_282p: Fragrant Phylactery
+BG20_HERO_283p: Dungar's Gryphon
+BG20_HERO_283p_t1: Westfall
+BG20_HERO_283p_t2: Ironforge
+BG20_HERO_283p_t3: Eastern Plaguelands
+BG20_HERO_301p: Devour
+BG20_HERO_666p: Realm of Terror
+BG21_HERO_000p: Conviction
+BG21_HERO_000p2: Conviction (Rank 2)
+BG21_HERO_000p3: Conviction (Rank 3)
+BG21_HERO_010p: I Spy
+BG21_HERO_020p: Stir the Pot
+BG21_HERO_030p: Sneed's Replicator
+BG22_HERO_000p: Deadeye
+BG22_HERO_000p_t1: Aim Left!
+BG22_HERO_000p_t2: Aim Low!
+BG22_HERO_000p_t3: Aim High!
+BG22_HERO_000p_t4: Aim Right!
+BG22_HERO_001p: Embrace the Elements
+BG22_HERO_001p_t1: Earth Invocation
+BG22_HERO_001p_t2: Fire Invocation
+BG22_HERO_001p_t3: Water Invocation
+BG22_HERO_001p_t4: Lightning Invocation
+BG22_HERO_002p: Lead the Frostwolves
+BG22_HERO_003p: Lead the Stormpikes
+BG22_HERO_004p: Twice as Nice
+BG22_HERO_007p: Azshara's Ambition
+BG22_HERO_007p2: Naga Conquest
+BG22_HERO_200p: MechGyver
+BG22_HERO_201p: Expedition Plans
+BG22_HERO_305p: Broodmother
+BG23_HERO_201p: Tentacular
+BG23_HERO_303p2: Detective for Hire
+BG23_HERO_304p: Relics of the Deep
+BG23_HERO_305p: The Perfect Crime
+BG23_HERO_306p: Reclaimed Souls
+BG24_HERO_100p: Whodunit?
+BG24_HERO_204p: Enhancification
+BG25_HERO_100p: Build-An-Undead
+BG25_HERO_103p: Rapid Reanimation
+BG25_HERO_105p: Sign a New Artist
+BG26_HERO_101p: I'm the Cap'n Now
+BG26_HERO_102p: Major Hymn
+BG26_HERO_102p2: Minor Hymn
+BG26_HERO_104p: Upbeat Harmony
+BG27_Anomaly_805t: Match Fixing
+BG27_HERO_801p: Thorim's Champion
+BG27_HERO_801p2: Choose Your Champion
+BG28_HERO_400p: Lucky Roll
+BG28_HERO_400p2: Lucky Roll
+BG28_HERO_800p: Reliquary Research
+BG28_HERO_801p: Blessing of the Nine Frogs
+BG30_HERO_304p: Fantastic Treasure
+BG31_Anomaly_117t: Eject!
+BG31_HERO_003p: The Galaxy's Lens
+BG31_HERO_005p: Cloning Gallery
+BG31_HERO_006p: Arcane Knowledge
+BG31_HERO_801p: Lift Off
+BG31_HERO_802p: Warp Gate
+BG31_HERO_811p: Spawning Pool
+BG31_HERO_811p2: Evolution Chamber
+BG31_HERO_811p3: Ultralisk Cavern
+BG32_HERO_001p: Wisdom of Ancients
+BG32_HERO_002p: Growing Collection
+BGDUO_Anomaly_003t: Golden Friendship
+BGDUO_Anomaly_007t: Pooled Resources
+BGDUO_HERO_100p: [x]
+BGDUO_HERO_101p: Glorious Gloop
+BGDUO_HERO_104p: Efficient Exchange
+BGDUO_HERO_222p: Double Trouble
+BGDUO_HERO_223p: Double Trouble
+BOM_003p: Scurry
+BOM_01_Golem_05p: Manufacture
+BOM_05_Elfarran_003p: Conscription
+BOM_05_EllingTrias_005p: Going, Going, Gone!
+BOM_05_Hooktusk_002p: Fire!
+BOM_07_Scabbs_Bob_001p: It'll Fight Hard
+BOM_07_Scabbs_Cariel_005p: Cariel
+BOM_07_Scabbs_Cariel_006p: Cariel
+BOM_07_Scabbs_Cariel_007p: Cariel
+BOM_07_Scabbs_EdwinVanCleef_008p: Defiant Defias
+BOM_07_Scabbs_Hogger_003p: HOGGER!
+BOM_07_Scabbs_Kurtrus_005p: Kurtrus
+BOM_07_Scabbs_Kurtrus_006p: Kurtrus
+BOM_07_Scabbs_Kurtrus_007p: Kurtrus
+BOM_07_Scabbs_MrSmite_006p: Juggernaut Control
+BOM_07_Scabbs_MrSmite_006p1: Boom! Boom!
+BOM_07_Scabbs_MrSmite_006p2: Grab Yer Cutlass
+BOM_07_Scabbs_MrSmite_006p3: Let's Buckle Swash
+BOM_07_Scabbs_Prestor_002p: Breath of Fire
+BOM_07_Scabbs_Scabbs_005p: Choose An Ally
+BOM_07_Scabbs_Scabbs_006p: Choose An Ally
+BOM_07_Scabbs_Scabbs_007p: Choose An Ally
+BOM_07_Scabbs_Sneed_005p: Notorious
+BOM_07_Scabbs_Tavish_005p: Tavish
+BOM_07_Scabbs_Tavish_006p: Tavish
+BOM_07_Scabbs_Tavish_007p: Tavish
+BOM_07_Scabbs_Thelwater_004p: Locked Tight
+BOM_07_Scabbs_Xyrella_005p: Xyrella
+BOM_07_Scabbs_Xyrella_006p: Xyrella
+BOM_07_Scabbs_Xyrella_007p: Xyrella
+BOM_08_Tavish_Galvangar_005p: Wither Soul
+BOM_08_Tavish_Morloch_002p: Digest Magic
+BOM_09_Brukan_003p: Choose An Ally
+BOM_09_Campfire_002p: Embers
+BOM_09_Ichman_003p: Paratroopin'
+BOM_09_Primalist_005p: Primal Magic
+BOTA_BOSS_04p: Duality
+BOTA_BOSS_05p: Perfection
+BOTA_BOSS_07p: Gloop Sprayer
+BOTA_BOSS_09p: Soul Battery
+BOTA_BOSS_13p: Stormsurge
+BOTA_BOSS_14p: Experimental Necrium
+BOTA_BOSS_15p: Firework Volley
+BOTA_BOSS_16p: Firework Barrage
+BOTA_BOSS_17p: Glowing Laser
+BOTA_BOSS_18p: Radiant Laser
+BOTA_BOSS_20p1: True Perfection
+BOTA_BOSS_20p2: Fusion Core
+BOTA_BOSS_20p3: Kadoom Bot
+BOTA_BOSS_20p4: Death Ray
+BRM_027p: DIE, INSECT!
+BRM_027pH: DIE, INSECTS!
+BRMA01_2: Pile On!
+BRMA01_2H: Pile On!
+BRMA01_2H_2_TB: Pile On!!!
+BRMA02_2: Jeering Crowd
+BRMA02_2_2_TB: Jeering Crowd
+BRMA02_2H: Jeering Crowd
+BRMA03_2: Power of the Firelord
+BRMA04_2: Magma Pulse
+BRMA05_2: Ignite Mana
+BRMA05_2H: Ignite Mana
+BRMA06_2: The Majordomo
+BRMA06_2H: The Majordomo
+BRMA06_2H_TB: The Majordomo
+BRMA07_2: ME SMASH
+BRMA07_2_2_TB: ME SMASH
+BRMA07_2H: ME SMASH
+BRMA08_2: Intense Gaze
+BRMA08_2H: Intense Gaze
+BRMA09_2: Open the Gates
+BRMA09_2_TB: Open the Gates
+BRMA09_2H: Open the Gates
+BRMA09_3: Old Horde
+BRMA09_3H: Old Horde
+BRMA09_4: Blackwing
+BRMA09_4H: Blackwing
+BRMA09_5: Dismount
+BRMA09_5H: Dismount
+BRMA10_3: The Rookery
+BRMA10_3H: The Rookery
+BRMA11_2: Essence of the Red
+BRMA11_2H: Essence of the Red
+BRMA11_2H_2_TB: Essence of the Red
+BRMA12_10: Mutation
+BRMA12_2: Brood Affliction
+BRMA12_2H: Brood Affliction
+BRMA13_2: True Form
+BRMA13_2H: True Form
+BRMA13_4: Wild Magic
+BRMA13_4_2_TB: Wild Magic
+BRMA13_4H: Wild Magic
+BRMA14_10: Activate!
+BRMA14_10H: Activate!
+BRMA14_10H_TB: Activate!
+BRMA14_2: Activate Arcanotron
+BRMA14_2H: Activate Arcanotron
+BRMA14_4: Activate Toxitron
+BRMA14_4H: Activate Toxitron
+BRMA14_6: Activate Electron
+BRMA14_6H: Activate Electron
+BRMA14_8: Activate Magmatron
+BRMA14_8H: Activate Magmatron
+BRMA15_2: The Alchemist
+BRMA15_2H: The Alchemist
+BRMA16_2: Echolocate
+BRMA16_2H: Echolocate
+BRMA17_5: Bone Minions
+BRMA17_5_TB: Bone Minions
+BRMA17_5H: Bone Minions
+BRMA17_8: Nefarian Strikes!
+BRMA17_8H: Nefarian Strikes!
+BTA_BOSS_01p: Spread the Word
+BTA_BOSS_04p: All Shall Serve
+BTA_BOSS_06p: Grease Monkey
+BTA_BOSS_07p: Felstorm Tornado
+BTA_BOSS_07p2: Reroute Power
+BTA_BOSS_10p: Demonic Light
+BTA_BOSS_10p2: Felspores
+BTA_BOSS_12p: From My Oil Comes Rust
+BTA_BOSS_13p: Second Opinion
+BTA_BOSS_17p: Burning Rage
+BTA_BOSS_18p: Twisted Reflection
+BTA_BOSS_19p: Shatter
+BTA_BOSS_20p: Blast Nova
+BTA_BOSS_21p: Volcanic Geyser
+BTA_BOSS_25p2: Gravity Lapse
+DALA_BOSS_01p: Chomp
+DALA_BOSS_01px: Chomp
+DALA_BOSS_02p: The Feast
+DALA_BOSS_02px: The Feast
+DALA_BOSS_03p: Prestidigitation
+DALA_BOSS_03px: Prestidigitation
+DALA_BOSS_04p: Open Wormhole
+DALA_BOSS_05p: Mana Echoes
+DALA_BOSS_06p: "Armor Up"
+DALA_BOSS_06px: "Tank Up!"
+DALA_BOSS_07p: Take Flight!
+DALA_BOSS_07p2: Flying!
+DALA_BOSS_08p: Apple Toss
+DALA_BOSS_08px: Apple Toss
+DALA_BOSS_09p: Repeat History
+DALA_BOSS_09px: Repeat History
+DALA_BOSS_10p: Street Smarts
+DALA_BOSS_10px: Street Smarts
+DALA_BOSS_11p: Backstabber
+DALA_BOSS_11px: Backstabber
+DALA_BOSS_12p: Forbidden Love
+DALA_BOSS_12px: Forbidden Love
+DALA_BOSS_13p: Slice and Dice
+DALA_BOSS_14p: Order Up!
+DALA_BOSS_14px: Order Up!
+DALA_BOSS_15p: Blessing of Elune
+DALA_BOSS_16p: Equivalent Exchange
+DALA_BOSS_16px: Equivalent Exchange
+DALA_BOSS_17p: Twin Paths
+DALA_BOSS_18p: Totemic Summons
+DALA_BOSS_18px: Totemic Summons
+DALA_BOSS_19p: Lil' Eviscerate
+DALA_BOSS_19px: Lil' Eviscerate
+DALA_BOSS_20p: Stormswell
+DALA_BOSS_20px: Stormswell
+DALA_BOSS_21p: Prediction
+DALA_BOSS_22p: Shhh!
+DALA_BOSS_22px: Shhh!
+DALA_BOSS_23p: Sharkbite
+DALA_BOSS_23px: Sharkbite
+DALA_BOSS_24p: Ar'ha's Call
+DALA_BOSS_24px: Ar'ha's Call
+DALA_BOSS_25p: Assembly
+DALA_BOSS_25px: Assembly
+DALA_BOSS_26p: Cold Water
+DALA_BOSS_26px: Cold Water
+DALA_BOSS_27p: Masterpiece!
+DALA_BOSS_28p: Scroll Savvy
+DALA_BOSS_29p: Excavate
+DALA_BOSS_30p: A Tale of Kings
+DALA_BOSS_31p: Bling it On!
+DALA_BOSS_31px: Bling it On!
+DALA_BOSS_33p: Made of Coins
+DALA_BOSS_34p: Merry Go Round
+DALA_BOSS_35p: Healing Hands
+DALA_BOSS_35px: Healing Hands
+DALA_BOSS_36p: Import "Pet"
+DALA_BOSS_36px: Import "Pet"
+DALA_BOSS_37p: Tales of Fortune
+DALA_BOSS_37px: Tales of Fortune
+DALA_BOSS_38p: Portal Party
+DALA_BOSS_38px: Portal Party
+DALA_BOSS_39p: For The Light!
+DALA_BOSS_40p: Immolation Aura
+DALA_BOSS_40px: Immolation Aura
+DALA_BOSS_41p: Summon Companion
+DALA_BOSS_41px: Summon Companions
+DALA_BOSS_42p: Pogoshuffle
+DALA_BOSS_42px: Pogoshuffle
+DALA_BOSS_43p: Kaironomaly
+DALA_BOSS_44p: Dark Tidings
+DALA_BOSS_44px: Dark Tidings
+DALA_BOSS_45p: Ray of Suffering
+DALA_BOSS_45px: Ray of Suffering
+DALA_BOSS_46p: Protective Bubble
+DALA_BOSS_46px: Protective Bubble
+DALA_BOSS_47p: Lava Belch
+DALA_BOSS_47px: Lava Belch
+DALA_BOSS_48p: To The Void
+DALA_BOSS_49p: Uncontrollable Energy
+DALA_BOSS_49px: Uncontrollable Energy
+DALA_BOSS_50p: Sand Breath
+DALA_BOSS_50px: Sand Breath
+DALA_BOSS_51p: Tinker
+DALA_BOSS_52p: Hold the Gates!
+DALA_BOSS_52px: Hold the Gates!
+DALA_BOSS_53p: Boogie Woogie
+DALA_BOSS_53px: Boogie Woogie
+DALA_BOSS_54p: Spell Lock
+DALA_BOSS_55p: Raise the Alarm
+DALA_BOSS_55px: Raise the Alarm
+DALA_BOSS_56p: Bribery
+DALA_BOSS_57p: Greed is Good
+DALA_BOSS_58p: Blast Powder
+DALA_BOSS_59p: Blackmail
+DALA_BOSS_59px: Blackmail
+DALA_BOSS_60p: Summon Elemental
+DALA_BOSS_60px: Summon Elemental
+DALA_BOSS_61p: Web Grab
+DALA_BOSS_62p: Darken
+DALA_BOSS_62px: Darken
+DALA_BOSS_63p: Bully
+DALA_BOSS_63px: Bully
+DALA_BOSS_64p: Invest!
+DALA_BOSS_64px: Invest!
+DALA_BOSS_65p: Impervious
+DALA_BOSS_66p: Next...
+DALA_BOSS_67p: Arcane Runes
+DALA_BOSS_68p: Mini Portal
+DALA_BOSS_68px: Mega Portal
+DALA_BOSS_69p: Dragonwrath
+DALA_BOSS_69px: Dragonwrath
+DALA_BOSS_70p: Bombardment
+DALA_BOSS_70px: Bombardment
+DALA_BOSS_71p: Summon Protectors
+DALA_BOSS_71px: Summon Protectors
+DALA_BOSS_72p: Steelskin
+DALA_BOSS_73p: Earthmother's Rage
+DALA_BOSS_73px: Earthmother's Rage
+DALA_BOSS_74p: Soul Weave
+DALA_BOSS_74px: Soul Weave
+DALA_BOSS_75p: A Quest!
+DRGA_BOSS_15p: Hooked
+DRGA_BOSS_17p: Breath of Life
+DRGA_BOSS_27p: Teamwork!
+DRGA_BOSS_27p_H: Teamwork!
+DRGA_BOSS_33p: Unleash Galakrond
+DRGA_BOSS_34p: [TEMP]
+EX1_tk33_2_TB: INFERNO!
+FB_LK007p: Freezing Blast
+FB_SPT_Annoyo_HP: Construct Annoy-o-Tron
+FB_SPT_Annoyo_HP_0: Construct Annoy-o-Tron
+FB_SPT_Annoyo_HP_1: Construct Annoy-o-Trons
+GIL_504h: Bewitch
+GILA_400p: Dog Whistle
+GILA_500p2: Scavenge
+GILA_600p: Fire!
+GILA_900p: Temporal Loop
+GILA_BOSS_20p: Guttural Howl
+GILA_BOSS_21p: Fading Bite
+GILA_BOSS_22p: Shank
+GILA_BOSS_23p: Chuck
+GILA_BOSS_24p: From the Swamp
+GILA_BOSS_25p: Trap Preparation
+GILA_BOSS_26p: Nab
+GILA_BOSS_27p: Consume
+GILA_BOSS_29p: Infatuation
+GILA_BOSS_30p: Blood Red Apple
+GILA_BOSS_31p: Splinter
+GILA_BOSS_32p: Unstable Growth
+GILA_BOSS_33p: Harvest
+GILA_BOSS_34p: Devour Soul
+GILA_BOSS_35p: Bloodthirst
+GILA_BOSS_36p: Witch's Kiss
+GILA_BOSS_37p: It's Raining Fin
+GILA_BOSS_38p: Call of the Raven
+GILA_BOSS_39p: Together Forever
+GILA_BOSS_40p: Grafted Bark
+GILA_BOSS_41p: Axe Around
+GILA_BOSS_42p: Bulldoze
+GILA_BOSS_43p: Grave Mistake
+GILA_BOSS_44p: Hollow Needle
+GILA_BOSS_45p: Poisoned Drink
+GILA_BOSS_46p: Monstrous Aura
+GILA_BOSS_47p: Frumiousity
+GILA_BOSS_48p: Chronoacceleration
+GILA_BOSS_49p: False Heart
+GILA_BOSS_50p: Echoes of the Witchwood
+GILA_BOSS_51p: Death and Taxes
+GILA_BOSS_52p: Soot Up
+GILA_BOSS_52p2: Beast Within
+GILA_BOSS_54p: One with the Trees
+GILA_BOSS_55p: Unfinished Business
+GILA_BOSS_56p: A New Face
+GILA_BOSS_57p: Desecrate
+GILA_BOSS_58p: Terrify
+GILA_BOSS_59p: Pistol Barrage
+GILA_BOSS_60p: Plunder
+GILA_BOSS_62p: Cull the Meek
+GILA_BOSS_63p: Tangled Wrath
+GILA_BOSS_64p: Hypnotize
+GILA_BOSS_65p: Starving
+GILA_BOSS_66p: . . .
+GILA_BOSS_67p: Cannibalism
+GILA_BOSS_68p: Poison Flask
+ICC_481p: Transmute Spirit
+ICC_828p: Build-A-Beast
+ICC_829p: The Four Horsemen
+ICC_831p: Siphon Life
+ICC_832p: Plague Lord
+ICC_833h: Icy Touch
+ICCA04_008p: Frost Breath
+ICCA04_009p: Frost Breath
+ICCA04_010p: Frost Breath
+ICCA04_011p: Ice Claw
+ICCA05_002p: Vampiric Bite
+ICCA05_004p: Vampiric Leech
+ICCA06_002p: Skeletal Reconstruction
+ICCA07_002p: Mad Science
+ICCA07_003p: Madder Science
+ICCA07_005p: Maddest Science
+ICCA08_002p: The Scourge
+ICCA08_032p: Harvest of Souls
+ICCA09_001p: Blood Rune
+ICCA10_009p: Whisper of Death
+KAR_A01_02: Reflections
+KAR_A01_02H: Reflections
+KAR_A02_13: Be Our Guest
+KAR_A02_13H: Be Our Guest
+KAR_A10_22: Castle
+KAR_A10_22H: Castle
+KAR_A10_33: Cheat
+KARA_00_02: Legion
+KARA_00_02H: Legion
+KARA_00_04: Brilliance
+KARA_00_04H: Brilliance
+KARA_04_02hp: Twister
+KARA_05_01hp: Trembling
+KARA_05_01hpheroic: Trembling
+KARA_06_03hp: True Love
+KARA_06_03hpheroic: True Love
+KARA_07_02: Gallery Protection
+KARA_08_02: Nether Rage
+KARA_08_02H: Nether Rage
+KARA_09_04: Dark Pact
+KARA_11_02: Manastorm
+KARA_12_02: Ley Lines
+KARA_12_02H: Ley Lines
+KARA_13_13: Legion
+KARA_13_13H: Legion
+LOEA01_02: Blessings of the Sun
+LOEA01_02h: Blessings of the Sun
+LOEA02_02: Djinn’s Intuition
+LOEA02_02h: Djinn’s Intuition
+LOEA04_02: Escape!
+LOEA04_02h: Escape!
+LOEA05_02: Trogg Hate Minions!
+LOEA05_02a: Trogg Hate Minions!
+LOEA05_02h: Trogg Hate Minions!
+LOEA05_02ha: Trogg Hate Minions!
+LOEA05_03: Trogg Hate Spells!
+LOEA05_03h: Trogg Hate Spells!
+LOEA06_02: Stonesculpting
+LOEA06_02h: Stonesculpting
+LOEA07_03: Flee the Mine!
+LOEA07_03h: Flee the Mine!
+LOEA07_29: Throw Rocks
+LOEA09_2: Enraged!
+LOEA09_2H: Enraged!
+LOEA09_3: Getting Hungry
+LOEA09_3b: Getting Hungry
+LOEA09_3c: Getting Hungry
+LOEA09_3d: Getting Hungry
+LOEA09_3H: Endless Hunger
+LOEA10_2: Mrglmrgl MRGL!
+LOEA10_2H: Mrglmrgl MRGL!
+LOEA12_2: Pearl of the Tides
+LOEA12_2H: Pearl of the Tides
+LOEA13_2: Ancient Power
+LOEA13_2H: Ancient Power
+LOEA14_2: Platemail Armor
+LOEA14_2H: Platemail Armor
+LOEA15_2: Unstable Portal
+LOEA15_2H: Unstable Portal
+LOEA16_16: Rummage
+LOEA16_16H: Rummage
+LOEA16_2: Staff of Origination
+LOEA16_2H: Staff of Origination
+LOOTA_BOSS_04p: Sculpt Wax
+LOOTA_BOSS_05p: Unstable Explosion
+LOOTA_BOSS_06p: Evolvomancy
+LOOTA_BOSS_09p: Freeze
+LOOTA_BOSS_10p: Light's Will
+LOOTA_BOSS_11p: Cruel Words
+LOOTA_BOSS_12p: Charge!
+LOOTA_BOSS_13p: Tactical Retreat
+LOOTA_BOSS_15p: Divinity
+LOOTA_BOSS_16p: Totem of the Dead
+LOOTA_BOSS_17p: Battle Totem
+LOOTA_BOSS_18p: Rat Race
+LOOTA_BOSS_19p: Digest Magic
+LOOTA_BOSS_20p: Dispel Ward
+LOOTA_BOSS_21p: Swallow Whole
+LOOTA_BOSS_22p: Catch and Release
+LOOTA_BOSS_23p: Hunter's Call
+LOOTA_BOSS_24p: Gloop
+LOOTA_BOSS_25p: Vindictive Breath
+LOOTA_BOSS_26p8: Beam Me Up!
+LOOTA_BOSS_27p: Harden Sculpture
+LOOTA_BOSS_28p: Unstable Demolition
+LOOTA_BOSS_29p: Greater Evolution
+LOOTA_BOSS_30p: Searing Lash
+LOOTA_BOSS_31p: Charrrrrge!
+LOOTA_BOSS_33p: Metabolized Magic
+LOOTA_BOSS_34p: Devour
+LOOTA_BOSS_35p: Dampen Magic
+LOOTA_BOSS_36p: Sprouting Spore
+LOOTA_BOSS_37p: Arcane Infusion
+LOOTA_BOSS_38p: Totem of Chaos
+LOOTA_BOSS_39p: Giant Stomp
+LOOTA_BOSS_40p: Fading Light
+LOOTA_BOSS_41p: Join the Fray
+LOOTA_BOSS_42p: Mystic Barrier
+LOOTA_BOSS_43p: Three Wee Wishes
+LOOTA_BOSS_44p: Baby Breath
+LOOTA_BOSS_45p: Coin
+LOOTA_BOSS_46p: Fungal Infection
+LOOTA_BOSS_47p: The Floor is Lava
+LOOTA_BOSS_48p: Alarm
+LOOTA_BOSS_49p: Encroaching Darkness
+LOOTA_BOSS_50p: Mushroom, Mushroom
+LOOTA_BOSS_51p: Alluring Tune
+LOOTA_BOSS_52p: Doors Are Closing
+LOOTA_BOSS_53p: Stolen Time
+LOOTA_BOSS_54p: Idle
+LOOTA_BOSS_99p: Magic Candle
+NAX10_03: Hateful Strike
+NAX10_03H: Hateful Strike
+NAX11_02: Poison Cloud
+NAX11_02H: Poison Cloud
+NAX11_02H_2_TB: Poison Cloud
+NAX12_02: Decimate
+NAX12_02H: Decimate
+NAX12_02H_2_TB: Decimate
+NAX13_02: Polarity Shift
+NAX14_02: Frost Breath
+NAX15_02: Frost Blast
+NAX15_02H: Frost Blast
+NAX15_04: Chains
+NAX15_04H: Chains
+NAX1_04: Skitter
+NAX1h_04: Skitter
+NAX2_03: Rain of Fire
+NAX2_03H: Rain of Fire
+NAX3_02: Web Wrap
+NAX3_02_TB: Web Wrap
+NAX3_02H: Web Wrap
+NAX4_04: Raise Dead
+NAX4_04H: Raise Dead
+NAX5_02: Eruption
+NAX5_02H: Eruption
+NAX6_02: Necrotic Aura
+NAX6_02H: Necrotic Aura
+NAX7_03: Unbalancing Strike
+NAX7_03H: Unbalancing Strike
+NAX8_02: Harvest
+NAX8_02H: Harvest
+NAX8_02H_TB: Harvest
+NAX9_06: Unholy Shadow
+Prologue_AzzinothHP: Warglaives
+Prologue_XaviusHP: Wither Soul
+PVPDR_AV_Neutralp1: Promote!
+PVPDR_AV_Neutralp2: Send in the Scout
+PVPDR_AV_Neutralp3: Battle Tactics
+PVPDR_AV_Neutralp3p1: Bolster Defenses
+PVPDR_AV_Neutralp3p2: Gather Resourses
+PVPDR_AV_Neutralp3p3: Thunderclap
+PVPDR_AV_Neutralp4: Warmaster's Frenzy
+PVPDR_AV_Neutralp5: Harness the Elements
+PVPDR_AV_Neutralp6: War Commands
+PVPDR_AV_Neutralp6p1: Take the Bridge!
+PVPDR_AV_Neutralp6p2: Summon the Pack
+PVPDR_AV_Neutralp6p3: Rush the Keep
+PVPDR_Darius_P1: Fire!
+PVPDR_Darius_P2: Fire Away!
+PVPDR_Darius_P3: Fire at Thee!
+PVPDR_Reno_T4_2hp: Uldum Treasure Cache
+PVPDR_SCH_ComingSoon_Foreverp1: Coming Soon
+PVPDR_SCH_ComingSoonp2: Coming Soon
+PVPDR_SCH_ComingSoonp3: Coming Soon
+PVPDR_Toki_P1: Temporal Loop
+PVPDR_Toki_P2: Temporal Loop
+PVPDR_Toki_P3: Temporal Loop
+REV_770hp: Accuse
+SC_004hp: Ravage
+SC_400p: Stimpack
+SC_754p: Twin Blades
+Story_01_AethasHP: Arcane Intensity
+Story_01_AntonidasHP: Supreme Acumen
+Story_01_ArchimondeHP: Rain of Chaos
+Story_01_ArthasHP: Defensive Strike
+Story_01_GarroshHP: Horde Armada
+Story_01_GromHP: Equip Gorehowl
+Story_01_KaelthasHP: Firemancy
+Story_01_ThrallHP: Spirit of Air
+Story_03_AnduinHP: Harmonic Mallet
+Story_03_CorruptGarroshHP: Heart of Y'Shaarj
+Story_05_AnduinSI7HP: Infiltrator's Spyglass
+Story_05_AnduinYoungHP: Uncertain Destiny
+Story_05_AnduinYoungHP2: Uncertain Destiny Rank 2
+Story_07_Archimonde_005p: Rain of Chaos
+Story_07_Blackmoore_001p: Ring Fight
+Story_07_Deathwing_006p: Fiery Grip
+Story_07_Deathwing_006p2: Shattering
+Story_07_Deathwing_006p3: Cataclysm
+Story_07_Garrosh_008p: Heart of Y'Shaarj
+Story_08_Archimonde_004p: Rain of Chaos
+Story_08_Illidan_003p: Equip Warglaives
+Story_08_Illidan_005p: Metamorphosis
+Story_08_Xavius_006p: Nightmare Curse
+Story_10_BrothersStormrage_004: Brothers Stormrage
+Story_10_Magtheridon_005p: Cleaving Attack
+Story_11_Bookworm: Bookworm
+Story_11_Captain_006p: Sinking
+Story_11_Compass_009p: Finley's Compass
+Story_11_Dathril_011p: Dathril's Amulet
+Story_11_Dathril_012p: Capture
+Story_11_Faelin_000p: Choose Crew
+Story_11_Faelin_001p: Dredge Depths
+Story_11_Faelin_002p: Dredge Depths Rank 2
+Story_11_Faelin_003p: Dredge Depths Rank 3
+Story_11_Faelin_005p: Dredge Depths Rank 4
+Story_11_Faelin_006p: Advise Rank 1
+Story_11_Faelin_007p: Advise Rank 2
+Story_11_Faelin_009p: Salvage
+Story_11_Faelin_010p: Salvage Rank 2
+Story_11_Faelin_011p: Salvage Rank 3
+Story_11_Faelin_015p: Support Crew
+Story_11_Faelin_016p: Support Crew Rank 2
+Story_11_Faelin_016p2: Faelin's Amulet
+Story_11_Finley_009p: Swap!
+Story_11_Handmaiden_005p: Perils of Nazjatar
+Story_11_Leviathan_001p: Submarine Controls
+Story_11_Murloc_009p: Murloc Mayhem
+SW_702: ???
+SW_712: ???
+TB_BaconShop_HP_001: Sharpen Blades
+TB_BaconShop_HP_008: Smart Savings
+TB_BaconShop_HP_009: Skilled Bartender
+TB_BaconShop_HP_010: Boon of Light
+TB_BaconShop_HP_011: Galakrond's Greed
+TB_BaconShop_HP_014: Stay Frosty
+TB_BaconShop_HP_015: Tinker
+TB_BaconShop_HP_017: Murloc King
+TB_BaconShop_HP_018: Rage Potion
+TB_BaconShop_HP_019: DIE, INSECTS!
+TB_BaconShop_HP_020: Prestidigitation
+TB_BaconShop_HP_022: Snicker-snack
+TB_BaconShop_HP_024: Reborn Rites
+TB_BaconShop_HP_027: Fire the Cannons!
+TB_BaconShop_HP_028: Temporal Tavern
+TB_BaconShop_HP_033: Menagerist
+TB_BaconShop_HP_035: All Patched Up
+TB_BaconShop_HP_036: Bloodfury
+TB_BaconShop_HP_037a: Wax Warband
+TB_BaconShop_HP_038: Bananarama
+TB_BaconShop_HP_039: Puzzle Box
+TB_BaconShop_HP_040: Brick by Brick
+TB_BaconShop_HP_041: A Tale of Kings
+TB_BaconShop_HP_041a: King of Beasts
+TB_BaconShop_HP_041b: King of Mechs
+TB_BaconShop_HP_041c: King of Murlocs
+TB_BaconShop_HP_041d: King of Demons
+TB_BaconShop_HP_041f: King of Dragons
+TB_BaconShop_HP_041g: King of Pirates
+TB_BaconShop_HP_041h: King of Elementals
+TB_BaconShop_HP_041i: King of Quilboar
+TB_BaconShop_HP_041j: King of Naga
+TB_BaconShop_HP_041k: King of Undead
+TB_BaconShop_HP_042: Hat Trick
+TB_BaconShop_HP_043: Nefarious Fire
+TB_BaconShop_HP_044: Procrastinate
+TB_BaconShop_HP_046: Gonna Be Rich!
+TB_BaconShop_HP_047: Lead Explorer
+TB_BaconShop_HP_048: Battle Brand
+TB_BaconShop_HP_049: Graveyard Shift
+TB_BaconShop_HP_050: Banshee's Blessing
+TB_BaconShop_HP_051: Honorable Warband
+TB_BaconShop_HP_052: Arcane Alteration
+TB_BaconShop_HP_053: I'll Take That!
+TB_BaconShop_HP_054: Manastorm
+TB_BaconShop_HP_056: Gone Fishing
+TB_BaconShop_HP_057: Adventure!
+TB_BaconShop_HP_061: ALL Will Burn!
+TB_BaconShop_HP_062: Dream Portal
+TB_BaconShop_HP_063: Clairvoyance
+TB_BaconShop_HP_064: Queen of Dragons
+TB_BaconShop_HP_065: Demon Hunter Training
+TB_BaconShop_HP_065t2: Spectral Sight
+TB_BaconShop_HP_066: Verdant Spheres
+TB_BaconShop_HP_068: Imprison
+TB_BaconShop_HP_069: Wingmen
+TB_BaconShop_HP_072: Pirate Parrrrty!
+TB_BaconShop_HP_074: Buried Treasure
+TB_BaconShop_HP_075: Trash for Treasure
+TB_BaconShop_HP_076: Piggy Bank
+TB_BaconShop_HP_077: Bob's Burgles
+TB_BaconShop_HP_080: Kel'Thuzad's Kitty
+TB_BaconShop_HP_081: Friendly Wager
+TB_BaconShop_HP_082: Everbloom
+TB_BaconShop_HP_084: Swap, Lock, & Shop It
+TB_BaconShop_HP_085: Tavern Lighting
+TB_BaconShop_HP_086: Swatting Insects
+TB_BaconShop_HP_087: DIE, INSECTS!
+TB_BaconShop_HP_087t: Sulfuras
+TB_BaconShop_HP_088: Avalanche
+TB_BaconShop_HP_101: Come One, Come All!
+TB_BaconShop_HP_102: Three Wishes
+TB_BaconShop_HP_103: Embrace Your Rage
+TB_BaconShop_HP_104: Saturday C'Thuns!
+TB_BaconShop_HP_105: Avatar of N'Zoth
+TB_BaconShop_HP_106: Prize Wall
+TB_BaconShop_HP_107: Sprout It Out!
+TB_BaconShop_HP_702: Runic Empowerment
+TB_BBR3_BOSS_09p: Castle
+TB_BossBattle_KoboldHP: Magic Candle
+TB_BossRumble_001hp: Smuggle
+TB_BossRumble_002hp: Construct Golem
+TB_BossRumble_003hp: Brew Potion
+TB_BotB_ETC_001p: Rock the World
+TB_BotB_Rin_001p: Bittersweet Symphony
+TB_BountyHunt_Consume: Consume
+TB_BountyHunt_Hypnotize: Hypnotize
+TB_BRMA01_2H_2: Pile On!!!
+TB_BRMA10_3H: The Rookery
+TB_BuildaBoss_404p: Toxic Fumes
+TB_CheaterChess_Black: Castle
+TB_Chupacabran_HP: Bloodthirst
+TB_CoopHero_HP_001: Madness
+TB_Diablo4_promo_HP: Lord of Terror
+TB_EVILBRM_OnyxiaHeroPower: Whelp Waves
+TB_EVILBRM_RafaamHeroPower: Arch-Villainy
+TB_EVILBRM_RafaamHeroPower2: Master Schemer
+TB_FactionWar_Boss_Rag_0: Swat Fly
+TB_Firefest2_Ahune_HP: Freezing Touch
+TB_HeadlessHorseman_HP1: Slash
+TB_HeadlessHorseman_HP3: Conscript
+TB_HeadlessHorseman_HP4: Witchcraft
+TB_HeadlessHorseman_HP5: Sense Weakness
+TB_HeadlessHorseman_HP6: Mummification
+TB_HunterPrince_03a: Demonic Blast
+TB_HunterPrince_03b: Demonic Blast
+TB_HunterPrince_04: Demon Claws
+TB_John_002p: Magic Candle
+TB_KT_AnubarakHP: Skitter
+TB_KTRAF_HP_KT_3: Necromancy
+TB_KTRAF_HP_RAF3: Staff, First Piece
+TB_KTRAF_HP_RAF4: Staff, Two Pieces
+TB_KTRAF_HP_RAF5: Staff of Origination
+TB_LEAGUE_REVIVAL_FinleySandHP: Shifting Sands
+TB_LevelUp_001: Level Up!
+TB_MammothParty_hp001: Decorate
+TB_MammothParty_hp002: Pelt
+TB_MechWar_Boss1_HeroPower: Hello! Hello! Hello!
+TB_MechWar_Boss2_HeroPower: Boom Bot Jr.
+TB_Mimiron_faceoff_HP: Robot Assembly
+TB_Mimiron_faceoff_HP2: Super Robot Assembly
+TB_RoadToNR_DinoHP: Closer Than It Looks
+TB_RoadToNR_JunkHP: Rummaged
+TB_RoadToNR_OrgrimmarHP: Curious Bystander
+TB_SPT_BossHeroPower: Barracks
+TB_SPT_DALA_BossHeroPower: Dalaran Defenders
+TB_SPT_DPromoHP: Diabolical Powers
+TB_SPT_DPromoHP2: So Many...
+TB_SPT_MTH_BossHeroPower: Party Barracks
+TB_TempleOutrun_Lazul_HP: Leap of Fate
+TB_TempleOutrun_Lazul_HP3: Return Fateful
+TB_TempleOutrun_Toggwaggle_HP: Fool's Gold
+TBA01_5: Wild Magic
+TBA01_6: Molten Rage
+THD_011hp: Reclaimed Souls
+THD_014hp: Summon Elemental
+THD_016hp: Grave Mistake
+THD_018hp: Enhancification
+THD_031hp: Soul Weave
+THD_033hp: Fire!
+THD_036hp: Masterpiece!
+TTN_717t: Algalon's Vision
+TU4e_002: Flames of Azzinoth
+ULDA_039: Uldum Treasure Cache
+UNG_934t2: DIE, INSECT!
+WW_0700p: Reno's Handcannon
+WW_0700p1: Arcane Bullet
+WW_0700p2: Frost Bullet
+WW_0700p3: Fire Bullet
+WW_0700p4: Holy Bullet
+WW_0700p5: Nature Bullet
+WW_0700p6: Shadow Bullet
+WW_0700p7: Fel Bullet
+
+=== DEATHKNIGHT ===
+FB_LK005: Remorseless Winter
+HERO_11aehp: Ghoul Charge
+HERO_11aehp2: Ghoul Frenzy
+HERO_11aghp: Ghoul Charge
+HERO_11aghp2: Ghoul Frenzy
+HERO_11aihp: Ghoul Charge
+HERO_11aihp2: Ghoul Frenzy
+HERO_11ajhp: Ghoul Charge
+HERO_11ajhp2: Ghoul Frenzy
+HERO_11bp: Ghoul Charge
+HERO_11bp2: Ghoul Frenzy
+HERO_11cbp: Ghoul Charge
+HERO_11cbp2: Ghoul Frenzy
+HERO_11fbp: Ghoul Charge
+HERO_11fbp2: Ghoul Frenzy
+HERO_11gbp: Ghoul Charge
+HERO_11gbp2: Ghoul Frenzy
+HERO_11hbp: Ghoul Charge
+HERO_11hbp2: Ghoul Frenzy
+HERO_11ibp: Ghoul Charge
+HERO_11ibp2: Ghoul Frenzy
+HERO_11lbp: Ghoul Charge
+HERO_11lbp2: Ghoul Frenzy
+HERO_11ohp: Ghoul Charge
+HERO_11ohp2: Ghoul Frenzy
+HERO_11uhp: Ghoul Charge
+HERO_11uhp2: Ghoul Frenzy
+HERO_11vhp: Ghoul Charge
+HERO_11vhp2: Ghoul Frenzy
+HERO_11zhp: Ghoul Charge
+HERO_11zhp2: Ghoul Frenzy
+ICCA08_030p: Remorseless Winter
+PVPDR_RLK_Sai_HP1: Ghoul Blitz
+PVPDR_RLK_Sai_HP2: Gathering Storm
+PVPDR_RLK_Sai_HP3: Lichborne Might
+PVPDR_RLK_Scarlet_HP1: Blood Parasite
+PVPDR_RLK_Scarlet_HP2: Hematology
+PVPDR_RLK_Scarlet_HP3: Scourging
+RLK_Prologue_Arthas_002p: Ghoul Charge
+RLK_Prologue_Arthas_003p: Ghoul Charge
+RLK_Prologue_Arthas_004p: Ghoul Charge
+RLK_Prologue_MalGanis_001p: Ghoul Charge
+Story_03_ZarzhetHP: Dark Conversion
+Story_04_ArthasHP: Scourge Army
+Story_04_IcebladeHP: Infection
+Story_09_Teron_007p: Dark Infusion
+Story_10_Arthas_001p: Equip Frostmourne
+Story_10_Arthas_007p: Dark Determination
+Story_10_Velas_004p: Grave Call
+TB_BotB_CageHead_001p: Blight Charge
+THD_001hp: Relentless Ghoul
+THD_002hp: Squashling Trick
+THD_003hp: Relentless Ghoul
+THD_100hp: Give a Dog a Bone
+TOY_829hp: Pulsing Pumpkins
+TOY_829hp3: Pulsing Pumpkins
+TUTR_HERO_11bp: Ghoul Charge
+TWI_001hp: Cold Blooded

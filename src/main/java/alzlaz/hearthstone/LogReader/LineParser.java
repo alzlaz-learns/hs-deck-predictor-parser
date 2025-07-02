@@ -1,6 +1,7 @@
 package alzlaz.hearthstone.LogReader;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 
@@ -10,8 +11,11 @@ import org.slf4j.LoggerFactory;
 
 import alzlaz.hearthstone.GameObjects.GameInfo;
 import alzlaz.hearthstone.GameObjects.HeroPowerMatcher;
+import alzlaz.hearthstone.GameObjects.Card;
 import alzlaz.hearthstone.GameObjects.EnumRegex;
 import alzlaz.hearthstone.LogReader.Interfaces.GameInfoLineParser;
+import alzlaz.hearthstone.eventhandler.CardPlayEvent;
+import alzlaz.hearthstone.eventhandler.EventSender;
 
 public class LineParser implements GameInfoLineParser {
     
@@ -25,11 +29,11 @@ public class LineParser implements GameInfoLineParser {
     private boolean gameEnded = false;
 
     private GameInfo gameInfo;
-    private final HandleJson cardLookup;
+    private final EventSender handler;
 
-    public LineParser(HandleJson cardLookup, GameInfo gameInfo) {
+    public LineParser( GameInfo gameInfo, EventSender handler) {
         this.gameInfo = gameInfo;
-        this.cardLookup = cardLookup;
+        this.handler = handler;
     }
 
 
@@ -150,50 +154,70 @@ public class LineParser implements GameInfoLineParser {
         int entityId = Integer.parseInt(matcher.group(1));
         String cardId = matcher.group(2);
         int playerId = Integer.parseInt(matcher.group(3));
-
-
+        List<Card> snapshot = null;
+        Card card = null;
         //this is probably going to be problematic in the future I need to research what the hero card ids are.
         // but temporarily it is a fix for not adding hero power actions into 
         if(!HeroPowerMatcher.isHeroPower(cardId)){
             entityToPlayer.put(entityId, playerId);
-
             if (cardId != null && !cardId.isEmpty()) {
                 if (playerId == 1) {
-                    gameInfo.getPlayer1().addCardPlayed(cardId);
-                    System.out.printf("play Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer1().getPlayerName(), cardLookup.findCardById(cardId), cardId);
+                    card = new Card(cardId, entityId);
+                    
+                    gameInfo.getPlayer1().addCardPlayed(card);
+                    if (gameInfo.getPlayer1().isOpponent()) {
+                        // If the player is an opponent, we publish the event
+                        // to notify about the card played.
+                        snapshot = List.copyOf(gameInfo.getPlayer1().getCardsPlayed());
+                        handler.publish(new CardPlayEvent(gameInfo.getPlayer1().getPlayerName(), snapshot));
+                    }
+                    
+                    // System.out.printf("play Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer1().getPlayerName(), cardLookup.findCardById(cardId), cardId);
                     logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
                 } else if (playerId == 2) {
-                    gameInfo.getPlayer2().addCardPlayed(cardId);
-                    System.out.printf("Play Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer2().getPlayerName(), cardLookup.findCardById(cardId), cardId);
+                    card = new Card(cardId, entityId);
+                    gameInfo.getPlayer2().addCardPlayed(card);
+                    if(gameInfo.getPlayer2().isOpponent()){
+                        snapshot = List.copyOf(gameInfo.getPlayer2().getCardsPlayed());
+                        handler.publish(new CardPlayEvent(gameInfo.getPlayer2().getPlayerName(), snapshot));
+                    }
+                    // System.out.printf("Play Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer2().getPlayerName(), cardLookup.findCardById(cardId), cardId);
                     logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
                 }
             }
-        }
-        
-    
-        
+        }  
     }
 
     public void onRevealAdd(Matcher matcher){
         int entityId = Integer.parseInt(matcher.group(1));
         String cardId = matcher.group(2);
-
-    
-
         Integer playerId = entityToPlayer.get(entityId);
-
+        List<Card> snapshot = null;
+        Card card = null;
         if (playerId == null) {       
             return;
         }
 
         if (playerId != null) {
             if (playerId == 1) {
-                gameInfo.getPlayer1().addCardPlayed(cardId);
-                System.out.printf("reveal Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer1().getPlayerName(),cardLookup.findCardById(cardId), cardId);
+                card = new Card(cardId, entityId);
+                gameInfo.getPlayer1().addCardPlayed(card);
+                if (gameInfo.getPlayer1().isOpponent()) {
+                    // If the player is an opponent, we publish the event
+                    // to notify about the card played.
+                    snapshot = List.copyOf(gameInfo.getPlayer1().getCardsPlayed());
+                    handler.publish(new CardPlayEvent(gameInfo.getPlayer1().getPlayerName(), snapshot));
+                }
+                // System.out.printf("reveal Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer1().getPlayerName(),cardLookup.findCardById(cardId), cardId);
                 logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer1().getPlayerName());
             } else if (playerId == 2) {
-                gameInfo.getPlayer2().addCardPlayed(cardId);
-                System.out.printf("Reveal Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer2().getPlayerName(),cardLookup.findCardById(cardId), cardId);
+                card = new Card(cardId, entityId);
+                gameInfo.getPlayer2().addCardPlayed(card);
+                if(gameInfo.getPlayer2().isOpponent()){
+                    snapshot = List.copyOf(gameInfo.getPlayer2().getCardsPlayed());
+                    handler.publish(new CardPlayEvent(gameInfo.getPlayer2().getPlayerName(), snapshot));
+                }
+                // System.out.printf("Reveal Player: %d %s played: %s - %s\n", playerId, gameInfo.getPlayer2().getPlayerName(),cardLookup.findCardById(cardId), cardId);
                 logger.info("Adding cardId={} to Player={} Name={} deck", cardId, playerId, gameInfo.getPlayer2().getPlayerName());
             }
         }
@@ -230,15 +254,15 @@ public class LineParser implements GameInfoLineParser {
         this.entityToPlayer.clear();
         logger.info("resetting game state");
         logger.info("Checking Reset success");
-        logger.info("Player {}: {}, deck {}", gameInfo.getPlayer1().getPlayerId(), gameInfo.getPlayer1().getPlayerName(), gameInfo.getPlayer1().getCardsPlayed());
-        logger.info("Player {}: {}, deck {}", gameInfo.getPlayer2().getPlayerId(), gameInfo.getPlayer2().getPlayerName(), gameInfo.getPlayer2().getCardsPlayed());
+        logger.info("Player {}: {}, deck {}, isOpponent: {}", gameInfo.getPlayer1().getPlayerId(), gameInfo.getPlayer1().getPlayerName(), gameInfo.getPlayer1().getCardsPlayed(), gameInfo.getPlayer1().isOpponent());
+        logger.info("Player {}: {}, deck {}, isOpponent: {}", gameInfo.getPlayer2().getPlayerId(), gameInfo.getPlayer2().getPlayerName(), gameInfo.getPlayer2().getCardsPlayed(), gameInfo.getPlayer2().isOpponent());
     }
 
     public void handleGameEnd() {
         logger.info("GAME ENDED");
-        logger.info("Player {}: {}, deck {}", gameInfo.getPlayer1().getPlayerId(), gameInfo.getPlayer1().getPlayerName(), gameInfo.getPlayer1().getCardsPlayed());
-        logger.info("Player {}: {}, deck {}", gameInfo.getPlayer2().getPlayerId(), gameInfo.getPlayer2().getPlayerName(), gameInfo.getPlayer2().getCardsPlayed());
-    
+        logger.info("Player {}: {}, deck {}, isOpponent: {}", gameInfo.getPlayer1().getPlayerId(), gameInfo.getPlayer1().getPlayerName(), gameInfo.getPlayer1().getCardsPlayed(), gameInfo.getPlayer1().isOpponent());
+        logger.info("Player {}: {}, deck {}, isOpponent: {}", gameInfo.getPlayer2().getPlayerId(), gameInfo.getPlayer2().getPlayerName(), gameInfo.getPlayer2().getCardsPlayed(), gameInfo.getPlayer2().isOpponent());
+
         
     }
 

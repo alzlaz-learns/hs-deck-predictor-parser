@@ -21,6 +21,7 @@ import alzlaz.hearthstone.GameObjects.GameInfo;
 import alzlaz.hearthstone.LogReader.HandleJson;
 import alzlaz.hearthstone.LogReader.LineParser;
 import alzlaz.hearthstone.LogReader.StandardLogReader;
+import alzlaz.hearthstone.eventhandler.EventSender;
 
 import static java.nio.file.StandardWatchEventKinds.*;
 
@@ -187,20 +188,22 @@ public class PowerLogFinder extends AbstractFolderWatcher implements Runnable {
         Path folder = Paths.get("C:\\Program Files (x86)\\Hearthstone\\Logs");
 		HandleJson cardLookup = new HandleJson();
 		GameInfo gameInfo = new GameInfo();
-		LineParser lineParser = new LineParser(cardLookup, gameInfo);
-
+		EventSender eventSender = new EventSender();
+		LineParser lineParser = new LineParser(gameInfo, eventSender);
+		EventSender eventHandler = new EventSender();
 
 
         PowerLogFinder folderWatcher = new PowerLogFinder(folder, lineParser);
 
-        ExecutorService executor = Executors.newSingleThreadExecutor();
-
-        executor.submit(folderWatcher);
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+		executor.submit(folderWatcher);          // Thread-0
+		executor.submit(eventHandler);            // Thread-1
 
         // Optional: Add shutdown hook
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             System.out.println("Shutdown hook triggered.");
             folderWatcher.stop(); // Stop the watcher loop
+			eventHandler.stop(); // Stop the event handler
             executor.shutdown();
             try {
                 if (!executor.awaitTermination(5, TimeUnit.SECONDS)) {

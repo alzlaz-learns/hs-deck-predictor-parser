@@ -9,7 +9,7 @@ public class Player {
     private String accountId;
     private String playerName;
     private boolean opponent = false;
-    private List<String> cardsPlayed = new ArrayList<>();
+    private List<Card> cardsPlayed = new ArrayList<>();
 
     public void setEntityId(Integer i){
         this.entityId = i;
@@ -51,13 +51,13 @@ public class Player {
         return this.opponent;
     }
 
-    public void addCardPlayed(String cardId) {
-        if (cardId != null && !cardId.isEmpty()) {
-            cardsPlayed.add(cardId);
+    public void addCardPlayed(Card card) {
+        if (card.getCardID() != null && !card.getCardID().isEmpty()) {
+            cardsPlayed.add(card);
         }
     }
 
-    public List<String> getCardsPlayed() {
+    public List<Card> getCardsPlayed() {
         return cardsPlayed;
     }
 

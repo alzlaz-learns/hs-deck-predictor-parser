@@ -3,6 +3,7 @@ package Parser;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
+import alzlaz.hearthstone.GameObjects.Card;
 import alzlaz.hearthstone.GameObjects.Player;
 
 
@@ -43,7 +44,7 @@ public class PlayerTest {
 
     @Test
     public void testAddAndGetCardsPlayed() {
-        String cardId = "Card123";
+        Card cardId = new Card("TestCard", 1);
         player.addCardPlayed(cardId);
         assert player.getCardsPlayed().size() == 1 : "Player should have one card played";
         assert player.getCardsPlayed().get(0).equals(cardId) : "Card ID should match the added card ID";
